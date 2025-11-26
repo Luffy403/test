@@ -45,6 +45,27 @@ a {
 .main {
   background: rgba(249, 249, 249, 1);
 }
+.section__title {
+  font-size: 64px;
+  font-weight: 800;
+  color: #80b3ff;
+}
+.section__title-decor {
+  color: rgb(0, 0, 0);
+}
+.look__all{
+  color: rgb(128, 179, 255);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  margin-right: 15px;
+}
+.section__top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 /* Шапка */
 .header {
   box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
@@ -216,16 +237,6 @@ a {
   line-height: 42px;
 }
 /* 2 секция */
-.promotion__title {
-  max-width: 1100px;
-  width: 100%;
-  font-size: 64px;
-  font-weight: 800;
-  color: #80b3ff;
-}
-.promotion__title-decor {
-  color: rgb(0, 0, 0);
-}
 .promotion__box {
   margin-top: 74px;
   display: grid;
@@ -286,30 +297,6 @@ a {
 }
 
 /* 3 секция */
-.sites__zag {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.sites__title {
-  max-width: 800px;
-  width: 100%;
-  font-size: 64px;
-  font-weight: 800;
-  color: #80b3ff;
-}
-.sites__title-decor {
-  color: rgb(0, 0, 0);
-}
-.sites__link-text,
-.stoks__link-text {
-  color: rgba(128, 179, 255, 1);
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 42px;
-  margin-right: 15px;
-}
 .sites__content {
   margin-top: 73px;
 }
@@ -389,14 +376,6 @@ a {
   content: url("../assets/svg/slide-right-hover.svg");
 }
 /* 4 секция */
-.prices__title {
-  font-size: 64px;
-  font-weight: 800;
-  color: #80b3ff;
-}
-.prices__title-text {
-  color: rgb(0, 0, 0);
-}
 .prices__box {
   margin-top: 74px;
   display: flex;
@@ -414,6 +393,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   transition: all 0.5s ease;
+  border: 3px solid #fff;
 }
 .prices__item:hover {
   transform: translateY(30px);
@@ -463,23 +443,6 @@ a {
   color: rgba(255, 255, 255, 1);
 }
 /* 5 секция*/
-.stoks__zag {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.stoks__title {
-  font-size: 64px;
-  font-weight: 800;
-  line-height: 75px;
-  color: rgba(128, 179, 255, 1);
-  max-width: 960px;
-  width: 100%;
-}
-.stoks__title-text {
-  color: rgba(0, 0, 0, 1);
-}
 .stoks__content {
   display: flex;
   flex-direction: row;
@@ -572,14 +535,6 @@ a {
   line-height: 50px;
 }
 /* 7 секция */
-.complex__title {
-  font-size: 64px;
-  font-weight: 800;
-  color: #80b3ff;
-}
-.complex__title-text {
-  color: rgb(0, 0, 0);
-}
 .complex__box {
   margin-top: 73px;
   transition: all 0.5s ease;
@@ -623,26 +578,7 @@ a {
 }
 /* 8 секция */
 .business__top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 73px;
-}
-.business__title {
-  font-size: 64px;
-  font-weight: 800;
-  color: #80b3ff;
-}
-.business__title-decor {
-  color: rgb(0, 0, 0);
-}
-.business__link {
-  color: rgb(128, 179, 255);
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 42px;
-  margin-right: 15px;
 }
 .business__items {
   display: grid;
@@ -679,15 +615,6 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-}
-.warranty__title {
-  font-size: 64px;
-  font-weight: 800;
-  color: #80b3ff;
-  margin-bottom: 74px;
-}
-.warranty__title-decor {
-  color: black;
 }
 .warranty__description {
   max-width: 686px;
@@ -757,14 +684,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.calculator__title {
-  font-size: 64px;
-  font-weight: 800;
-  color: #80b3ff;
-}
-.calculator__title-decor {
-  color: black;
-}
 .calculator__top-icon {
   margin-right: 80px;
 }
@@ -792,12 +711,23 @@ a {
   transition: all 0.3s ease;
 }
 .calculator__number.active {
-  background: #ffffff;
-  color: #000000;
+    background: #ffffff;
+    color: #000000;
+    position: relative;
+    z-index: 2;
+}
+.calculator__city.selected {
+    background: rgba(128, 179, 255, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+}
+.calculator__number,
+.calculator__item {
+    transition: all 0.3s ease;
 }
 .calculator__items {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 60px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
@@ -807,10 +737,10 @@ a {
 }
 .calculator__item {
   padding: 20px 45px 32px 40px;
-  display: none; /* Скрываем все шаги по умолчанию */
+  display: none; 
 }
 .calculator__item.active {
-  display: block; /* Показываем активный шаг */
+  display: block;
 }
 .calculator__item-title {
   color: black;
@@ -886,4 +816,12 @@ a {
 .calculator__row-button:hover {
   background: #6ba0f0;
   transform: translateY(-2px);
+}
+/* 11 секция */
+.cases__top{
+  margin-bottom: 74px;
+}
+.cases__title{
+  max-width: 905px;
+  width: 100%;
 }
