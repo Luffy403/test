@@ -4,11 +4,13 @@ class Calculator {
         this.totalSteps = 5;
         this.init();
     }
+    
     init() {
         this.bindEvents();
         this.setupCitySelection();
-        this.updateUI(); // Инициализируем UI при загрузке
+        this.updateUI();
     }
+    
     bindEvents() {
         // Кнопки "Далее"
         document.querySelectorAll('.calculator__btn--next').forEach(btn => {
@@ -17,14 +19,16 @@ class Calculator {
                 this.nextStep();
             });
         });
-        // Клик по шагам в прогресс-баре
-        document.querySelectorAll('.calculator__number').forEach(step => {
-            step.addEventListener('click', () => {
-                const stepNumber = parseInt(step.getAttribute('data-step'));
-                this.goToStep(stepNumber);
-            });
+        
+        // Кнопки "Назад"
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('calculator__btn--prev')) {
+                e.preventDefault();
+                this.prevStep();
+            }
         });
     }
+    
     setupCitySelection() {
         document.querySelectorAll('.calculator__city').forEach(city => {
             city.addEventListener('click', () => {
@@ -32,6 +36,7 @@ class Calculator {
                     r.checked = false;
                     r.parentElement.classList.remove('selected');
                 });
+                
                 const radio = city.querySelector('input[type="radio"]');
                 radio.checked = true;
                 city.classList.add('selected');
@@ -39,18 +44,28 @@ class Calculator {
             });
         });
     }
+    
     nextStep() {
         if (this.currentStep < this.totalSteps) {
             this.currentStep++;
             this.updateUI();
         }
     }
+    
+    prevStep() {
+        if (this.currentStep > 1) {
+            this.currentStep--;
+            this.updateUI();
+        }
+    }
+    
     goToStep(stepNumber) {
         if (stepNumber >= 1 && stepNumber <= this.totalSteps) {
             this.currentStep = stepNumber;
             this.updateUI();
         }
     }
+    
     updateUI() {
         // Обновляем шаги в прогресс-баре
         document.querySelectorAll('.calculator__number').forEach(step => {
@@ -61,14 +76,8 @@ class Calculator {
             } else {
                 step.classList.remove('active');
             }
-            
-            // Добавляем класс для пройденных шагов (опционально)
-            if (stepNumber < this.currentStep) {
-                step.classList.add('completed');
-            } else {
-                step.classList.remove('completed');
-            }
         });
+        
         // Обновляем контент шага
         document.querySelectorAll('.calculator__item').forEach(item => {
             item.classList.remove('active');
@@ -78,8 +87,31 @@ class Calculator {
         if (currentItem) {
             currentItem.classList.add('active');
         }
+        
+        // Обновляем видимость кнопки "Назад"
+        this.updateBackButtonVisibility();
+    }
+    
+    updateBackButtonVisibility() {
+        // Скрываем/показываем кнопку "Назад" в зависимости от текущего шага
+        const backButtons = document.querySelectorAll('.calculator__btn--prev');
+        
+        if (this.currentStep > 1) {
+            backButtons.forEach(btn => {
+                btn.style.display = 'inline-block';
+            });
+        } else {
+            backButtons.forEach(btn => {
+                btn.style.display = 'none';
+            });
+        }
+    }
+    
+    updateSelectedRegion(region) {
+        console.log('Выбран регион:', region);
     }
 }
+
 // Инициализация калькулятора
 document.addEventListener('DOMContentLoaded', () => {
     new Calculator();
