@@ -1,0 +1,1525 @@
+/* ==================== АДАПТАЦИЯ ПОД 1920px ==================== */
+
+@media (max-width: 1920px) {
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    padding: 0 280px;
+  }
+  .header__container {
+    padding: 0 240px;
+  }
+  .hero__container {
+    padding: 130px 280px 0 280px;
+  }
+  .section__title {
+    font-size: 56px;
+  }
+
+  /* СЕКЦИЯ 1: HERO */
+  .hero__title {
+    font-size: 80px;
+    line-height: 98px;
+  }
+  .hero__btn {
+    font-size: 32px;
+    padding: 20px 40px;
+  }
+  .hero__desc {
+    font-size: 28px;
+  }
+
+  /* HEADER */
+  .nav__list {
+    gap: 40px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 20px;
+  }
+  .header__number {
+    font-size: 28px;
+  }
+
+  /* ИЗОБРАЖЕНИЯ */
+  .hero__logo-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .promotion__item-img {
+    width: 100px;
+    height: 100px;
+  }
+  .work__back {
+    width: 100%;
+    height: auto;
+  }
+  .warranty__icon {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 1490px ==================== */
+
+@media (max-width: 1490px) {
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    padding: 0 180px;
+  }
+  .header__container {
+    padding: 0 160px;
+  }
+  .hero__container {
+    padding: 100px 180px 0 180px;
+  }
+  .section {
+    margin-bottom: 100px;
+  }
+  .section__title {
+    font-size: 48px;
+  }
+  .look-all {
+    font-size: 28px;
+  }
+
+  /* СЕКЦИЯ 1: HERO */
+  .hero__title {
+    max-width: 800px;
+    font-size: 72px;
+    line-height: 90px;
+  }
+  .hero__text {
+    margin-top: 180px;
+  }
+  .hero__button-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hero__btn {
+    max-width: 100%;
+    font-size: 28px;
+    padding: 18px 35px;
+  }
+  .hero__desc {
+    font-size: 24px;
+  }
+
+  /* СЕКЦИЯ 2: УСЛУГИ ПРОДВИЖЕНИЯ */
+  .promotion__box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .promotion__item {
+    height: 280px;
+  }
+  .promotion__item-title {
+    font-size: 20px;
+  }
+
+  /* HEADER */
+  .nav__list {
+    gap: 30px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 18px;
+  }
+
+  /* СЕКЦИЯ 3: ПОРТФОЛИО */
+  .sites__slider {
+    gap: 20px;
+    padding: 10px 15px 30px 15px;
+  }
+  .img-fix {
+    height: 500px;
+  }
+  .sites__item-title {
+    font-size: 32px;
+  }
+  .sites__btn {
+    font-size: 22px;
+    padding: 18px 40px;
+  }
+
+  /* СЕКЦИЯ 4: ЦЕНЫ */
+  .prices__box {
+    gap: 18px;
+  }
+  .prices__item {
+    width: 220px;
+    padding: 25px 20px 20px 20px;
+  }
+  .prices__item-title {
+    font-size: 30px;
+  }
+  .prices__item-text {
+    font-size: 16px;
+  }
+
+  /* СЕКЦИЯ 5: АКЦИИ */
+  .stoks__form {
+    padding: 25px 50px 40px 50px;
+  }
+  .stoks__form-title {
+    font-size: 28px;
+  }
+  .stoks__form-input,
+  .stoks__form-text {
+    max-width: 100%;
+    padding: 16px 12px;
+    margin-bottom: 28px;
+  }
+  .stoks__form__input::placeholder,
+  .stoks__form__text::placeholder {
+    font-size: 18px;
+  }
+  .stoks__btn {
+    font-size: 28px;
+  }
+
+  /* СЕКЦИЯ 7: КОМПЛЕКС */
+  .complex__box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .complex__item {
+    max-width: 100%;
+    padding: 25px;
+  }
+  .complex__item-title {
+    font-size: 22px;
+  }
+
+  /* СЕКЦИЯ 8: БИЗНЕС */
+  .business__items {
+    gap: 18px;
+  }
+  .business__item {
+    padding: 24px 26px;
+  }
+  .business__item-title {
+    font-size: 22px;
+  }
+  .business__item-description {
+    font-size: 18px;
+  }
+
+  /* СЕКЦИЯ 9: ГАРАНТИИ */
+  .warranty__input {
+    font-size: 32px;
+    padding: 18px 35px 12px 35px;
+    height: 80px;
+  }
+  .warranty__input::placeholder {
+    font-size: 32px;
+  }
+  .warranty__btn {
+    font-size: 32px;
+    height: 80px;
+    padding: 14px 18px;
+  }
+  .warranty__description {
+    font-size: 28px;
+  }
+  .warranty__text {
+    font-size: 28px;
+  }
+
+  /* СЕКЦИЯ 10: КАЛЬКУЛЯТОР */
+  .calculator__content {
+    min-height: 700px; /* Увеличиваем минимальную высоту */
+  }
+  .calculator__items {
+    position: relative; /* Меняем absolute на relative */
+    top: -13px; /* Сбрасываем позиционирование */
+  }
+  .calculator__number {
+    width: 220px;
+    font-size: 28px;
+  }
+  .calculator__item-title {
+    font-size: 28px;
+  }
+  .calculator__item-description {
+    font-size: 22px;
+  }
+  .calculator__city-title {
+    font-size: 22px;
+  }
+  .calculator__row-button {
+    font-size: 28px;
+  }
+
+  /* СЕКЦИЯ 11: КЕЙСЫ */
+  .cases__content-item {
+    max-width: 420px;
+    font-size: 22px;
+  }
+  .cases__item-title,
+  .cases__item-link {
+    font-size: 22px;
+  }
+  .cases__item-text {
+    max-width: 400px;
+  }
+  .cases__text-before,
+  .cases__text-after,
+  .cases__toggle-title {
+    font-size: 22px;
+  }
+  .cases__p-before,
+  .cases__p-after {
+    font-size: 22px;
+  }
+  .graf__title {
+    font-size: 22px;
+  }
+  .graf__number {
+    font-size: 20px;
+  }
+  .graf__item-month.before,
+  .graf__item-month.after {
+    font-size: 20px;
+  }
+
+  /* ИЗОБРАЖЕНИЯ */
+  .hero__logo-img {
+    max-width: 350px;
+  }
+  .promotion__item-img {
+    width: 70px;
+    height: 70px;
+  }
+  .work__back {
+    width: 100%;
+    height: auto;
+  }
+  .warranty__icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 768px (ПЛАНШЕТЫ) ==================== */
+
+@media (max-width: 768px) {
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    padding: 0 40px;
+  }
+  .header__container {
+    padding: 0 40px;
+  }
+  .hero__container {
+    padding: 60px 40px 0 40px;
+  }
+  .section {
+    margin-bottom: 60px;
+  }
+  .section__title {
+    font-size: 36px;
+  }
+  .look-all {
+    font-size: 18px;
+  }
+
+  /* HEADER */
+  .header__text {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header__number {
+    font-size: 18px;
+  }
+  .header__title {
+    font-size: 16px;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav__list {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 14px;
+  }
+
+  /* СЕКЦИЯ 1: HERO */
+  .hero {
+    background: linear-gradient(
+      180deg,
+      rgba(138, 222, 255, 1),
+      rgba(249, 249, 249, 1) 85%
+    );
+  }
+  .hero__logo {
+    margin-bottom: 20px;
+  }
+  .hero__shapes {
+    max-height: 400px;
+  }
+  .shape {
+    display: none;
+  }
+  .hero__text {
+    margin-top: 100px;
+  }
+  .hero__title {
+    max-width: 100%;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .hero__button-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero__btn {
+    max-width: 100%;
+    font-size: 18px;
+    padding: 14px 25px;
+  }
+  .hero__desc {
+    font-size: 16px;
+  }
+
+  /* СЕКЦИЯ 2: УСЛУГИ ПРОДВИЖЕНИЯ */
+  .promotion__box {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .promotion__item {
+    height: 200px;
+    padding: 15px 0 20px 0;
+  }
+  .promotion__item-title {
+    font-size: 16px;
+  }
+
+  /* СЕКЦИЯ 3: ПОРТФОЛИО */
+  .sites__slider {
+    flex-direction: column;
+    gap: 15px;
+    padding: 8px 12px 25px 12px;
+  }
+  .img-fix {
+    height: 300px;
+  }
+  .sites__item-title {
+    font-size: 24px;
+  }
+  .sites__btn {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+
+  /* СЕКЦИЯ 4: ЦЕНЫ */
+  .prices__box {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .prices__item {
+    width: 100%;
+    padding: 20px 15px 15px 15px;
+  }
+  .prices__item-title {
+    font-size: 24px;
+  }
+  .prices__item-price {
+    font-size: 16px;
+  }
+  .prices__item-text {
+    font-size: 14px;
+  }
+
+  /* СЕКЦИЯ 5: АКЦИИ */
+  .stoks__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .stoks__content-text {
+    max-width: 100%;
+    font-size: 22px;
+  }
+  .stoks__form {
+    max-width: 100%;
+    padding: 20px 25px 30px 25px;
+  }
+  .stoks__form-title {
+    font-size: 22px;
+  }
+  .stoks__form-input,
+  .stoks__form-text {
+    max-width: 100%;
+    padding: 14px 10px;
+    margin-bottom: 20px;
+  }
+  .stoks__form__input::placeholder,
+  .stoks__form__text::placeholder {
+    font-size: 16px;
+  }
+  .stoks__btn {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+  /* СЕКЦИЯ 7: КОМПЛЕКС */
+  .complex__box {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .complex__item {
+    max-width: 100%;
+    padding: 20px;
+    flex-direction: row;
+  }
+  .complex__item-title {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .complex__wrap {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  /* СЕКЦИЯ 8: БИЗНЕС */
+  .business__items {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .business__item {
+    grid-column: span 1;
+    padding: 20px 20px;
+  }
+  .business__item-title {
+    font-size: 20px;
+  }
+  .business__item-description {
+    font-size: 16px;
+  }
+
+  /* СЕКЦИЯ 9: ГАРАНТИИ */
+  .warranty__top {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .warranty__description {
+    max-width: 100%;
+    font-size: 22px;
+  }
+  .warranty__form {
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 20px;
+  }
+  .warranty__input {
+    max-width: 100%;
+    font-size: 22px;
+    padding: 14px 20px 10px 20px;
+    height: 60px;
+  }
+  .warranty__input::placeholder {
+    font-size: 22px;
+  }
+  .warranty__btn {
+    max-width: 100%;
+    font-size: 22px;
+    height: 60px;
+  }
+  .warranty__text {
+    font-size: 20px;
+  }
+
+  /* СЕКЦИЯ 10: КАЛЬКУЛЯТОР */
+  .calculator__top {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .calculator__top-icon {
+    margin-right: 0;
+  }
+  .calculator__content {
+    min-height: auto;
+  }
+  .calculator__steps {
+    gap: 10px;
+    overflow-x: auto;
+  }
+  .calculator__number {
+    width: auto;
+    min-width: 150px;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .calculator__items {
+    max-width: 100%;
+  }
+  .calculator__item {
+    padding: 15px 25px 20px 25px;
+  }
+  .calculator__item-title {
+    font-size: 20px;
+  }
+  .calculator__item-description {
+    font-size: 16px;
+  }
+  .calculator__region {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .calculator__city-title {
+    font-size: 16px;
+  }
+  .calculator__row-button {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  /* СЕКЦИЯ 11: КЕЙСЫ */
+  .cases__top {
+    margin-bottom: 40px;
+  }
+  .cases__content {
+    min-height: auto;
+  }
+  .cases__content-top {
+    gap: 10px;
+    overflow-x: auto;
+  }
+  .cases__content-item {
+    max-width: 100%;
+    min-width: 140px;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  .cases__items {
+    max-width: 100%;
+    top: 50px;
+  }
+  .cases__item {
+    padding: 15px 20px 40px 20px;
+  }
+  .cases__item-box {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .cases__item-left {
+    max-width: 100%;
+  }
+  .cases__item-text {
+    max-width: 100%;
+  }
+  .cases__item-title,
+  .cases__item-link {
+    font-size: 18px;
+  }
+  .cases__toggle {
+    gap: 25px;
+  }
+  .cases__text-before,
+  .cases__text-after,
+  .cases__toggle-title {
+    font-size: 16px;
+  }
+  .cases__p-before,
+  .cases__p-after {
+    font-size: 16px;
+  }
+  .cases__item-right {
+    max-width: 100%;
+  }
+  .graf {
+    height: 300px;
+    margin-left: 0;
+  }
+  .graf__title {
+    font-size: 16px;
+  }
+  .graf__number {
+    font-size: 14px;
+  }
+  .graf__item-line {
+    height: 300px;
+  }
+  .graf__item-month.before,
+  .graf__item-month.after {
+    font-size: 14px;
+  }
+  .cases__item-img {
+    height: 300px;
+    margin-top: 50px;
+  }
+
+  /* ИЗОБРАЖЕНИЯ */
+  .hero__logo-img {
+    max-width: 250px;
+  }
+  .promotion__item-img {
+    width: 60px;
+    height: 60px;
+  }
+  .work__back {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+  .warranty__icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 490px (МАЛЕНЬКИЕ СМАРТФОНЫ) ==================== */
+
+@media (max-width: 490px) {
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    padding: 0 20px;
+  }
+  .header__container {
+    padding: 0 20px;
+  }
+  .hero__container {
+    padding: 40px 20px 0 20px;
+  }
+  .header {
+    padding: 8px 0 15px 0;
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+  .section__title {
+    font-size: 24px;
+  }
+  .section__top {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .look-all {
+    font-size: 14px;
+  }
+
+  /* HEADER */
+  .header__text {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .header__number {
+    font-size: 14px;
+  }
+  .header__title {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .nav {
+    margin-top: 12px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav__list {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 12px;
+    line-height: 35px;
+  }
+
+  /* СЕКЦИЯ 1: HERO */
+  .hero__logo {
+    margin-bottom: 15px;
+  }
+  .hero__shapes {
+    max-height: 300px;
+  }
+  .hero__text {
+    margin-top: 70px;
+  }
+  .hero__title {
+    max-width: 100%;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .hero__button-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero__btn {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 12px 20px;
+    line-height: 38px;
+  }
+  .hero__desc {
+    font-size: 13px;
+    line-height: 35px;
+  }
+
+  /* СЕКЦИЯ 2: УСЛУГИ ПРОДВИЖЕНИЯ */
+  .promotion__box {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .promotion__item {
+    height: 150px;
+    padding: 12px 0 15px 0;
+  }
+  .promotion__item-title {
+    font-size: 13px;
+  }
+
+  /* СЕКЦИЯ 3: ПОРТФОЛИО */
+  .sites__slider {
+    flex-direction: column;
+    gap: 12px;
+    padding: 6px 10px 20px 10px;
+  }
+  .img-fix {
+    height: 200px;
+  }
+  .sites__item-title {
+    font-size: 18px;
+  }
+  .sites__btn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  /* СЕКЦИЯ 4: ЦЕНЫ */
+  .prices__box {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .prices__item {
+    width: 100%;
+    padding: 15px 12px 12px 12px;
+    height: auto;
+  }
+  .prices__item-title {
+    font-size: 20px;
+  }
+  .prices__item-price {
+    font-size: 14px;
+  }
+  .prices__item-desc {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    gap: 12px;
+    padding-left: 20px;
+  }
+  .prices__item-text {
+    font-size: 12px;
+  }
+  .prices__btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  /* СЕКЦИЯ 5: АКЦИИ */
+  .stoks__top {
+    flex-direction: column;
+  }
+  .stoks__content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .stoks__content-text {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .stoks__list-item {
+    margin-bottom: 15px;
+  }
+  .stoks__form {
+    max-width: 100%;
+    padding: 15px 15px 20px 15px;
+  }
+  .stoks__form-title {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .stoks__form-input,
+  .stoks__form-text {
+    max-width: 100%;
+    padding: 12px 8px;
+    margin-bottom: 15px;
+  }
+  .stoks__form__input::placeholder,
+  .stoks__form__text::placeholder {
+    font-size: 13px;
+  }
+  .stoks__btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-top: 15px;
+  }
+  .stoks__text {
+    font-size: 11px;
+  }
+
+  /* СЕКЦИЯ 7: КОМПЛЕКС */
+  .complex__box {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .complex__item {
+    max-width: 100%;
+    padding: 15px;
+    flex-direction: row;
+  }
+  .complex__item-title {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .complex__wrap {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  /* СЕКЦИЯ 8: БИЗНЕС */
+  .business__items {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .business__item {
+    grid-column: span 1;
+    padding: 15px 15px;
+  }
+  .business__item-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .business__item-description {
+    font-size: 13px;
+  }
+
+  /* СЕКЦИЯ 9: ГАРАНТИИ */
+  .warranty__top {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .warranty__description {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .warranty__form {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px 15px 20px 15px;
+    margin-bottom: 20px;
+  }
+  .warranty__input {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 12px 15px 8px 15px;
+    height: 50px;
+  }
+  .warranty__input::placeholder {
+    font-size: 16px;
+  }
+  .warranty__btn {
+    max-width: 100%;
+    font-size: 16px;
+    height: 50px;
+  }
+  .warranty__text {
+    font-size: 15px;
+  }
+
+  /* СЕКЦИЯ 10: КАЛЬКУЛЯТОР */
+  .calculator__top {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .calculator__top-icon {
+    margin-right: 0;
+  }
+  .calculator__content {
+    min-height: auto;
+  }
+  .calculator__steps {
+    gap: 8px;
+    overflow-x: auto;
+  }
+  .calculator__number {
+    width: auto;
+    min-width: 110px;
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .calculator__item {
+    padding: 12px 15px 15px 15px;
+  }
+  .calculator__item-title {
+    font-size: 16px;
+  }
+  .calculator__item-description {
+    font-size: 13px;
+  }
+  .calculator__region {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .calculator__city {
+    gap: 12px;
+  }
+  .calculator__city input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+  .calculator__city-title {
+    font-size: 13px;
+  }
+  .calculator__row-button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  /* СЕКЦИЯ 11: КЕЙСЫ */
+  .cases__top {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .cases__title {
+    max-width: 100%;
+  }
+  .cases__content {
+    min-height: auto;
+  }
+  .cases__content-top {
+    gap: 8px;
+    overflow-x: auto;
+  }
+  .cases__content-item {
+    max-width: 100%;
+    min-width: 110px;
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .cases__items {
+    max-width: 100%;
+    top: 45px;
+  }
+  .cases__item {
+    padding: 12px 15px 25px 15px;
+  }
+  .cases__item-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .cases__item-left {
+    max-width: 100%;
+  }
+  .cases__item-text {
+    max-width: 100%;
+  }
+  .cases__item-title,
+  .cases__item-link {
+    font-size: 14px;
+  }
+  .cases__toggle {
+    gap: 15px;
+  }
+  .cases__switch {
+    width: 70px;
+    height: 38px;
+  }
+  .cases__slider::before {
+    height: 28px;
+    width: 28px;
+  }
+  .cases__input:checked + .cases__slider::before {
+    transform: translateX(34px);
+  }
+  .cases__text-before,
+  .cases__text-after,
+  .cases__toggle-title {
+    font-size: 13px;
+  }
+  .cases__p-before,
+  .cases__p-after {
+    font-size: 13px;
+  }
+  .cases__item-right {
+    max-width: 100%;
+  }
+  .graf {
+    height: 200px;
+    margin-left: 0;
+  }
+  .graf__title {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  .graf__number {
+    font-size: 11px;
+  }
+  .graf__item-line {
+    height: 200px;
+    width: 20px;
+  }
+  .graf__item-month.before,
+  .graf__item-month.after {
+    font-size: 11px;
+  }
+  .cases__item-img {
+    height: 200px;
+    margin-top: 30px;
+  }
+
+  /* ИЗОБРАЖЕНИЯ */
+  .hero__logo-img {
+    max-width: 180px;
+  }
+  .promotion__item-img {
+    width: 50px;
+    height: 50px;
+  }
+  .work__back {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+  .warranty__icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 390px (САМЫЕ МАЛЕНЬКИЕ ЭКРАНЫ) ==================== */
+
+@media (max-width: 390px) {
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    padding: 0 15px;
+  }
+  .header__container {
+    padding: 0 15px;
+  }
+  .hero__container {
+    padding: 30px 15px 0 15px;
+  }
+  .header {
+    padding: 6px 0 12px 0;
+  }
+  .section {
+    margin-bottom: 30px;
+  }
+  .section__title {
+    font-size: 20px;
+  }
+  .section__top {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .look-all {
+    font-size: 12px;
+  }
+
+  /* HEADER */
+  .header__text {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .header__number {
+    font-size: 12px;
+  }
+  .header__title {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .header__border {
+    border: 1px solid rgba(198, 194, 254, 1);
+  }
+  .nav {
+    margin-top: 8px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .nav__list {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 11px;
+    line-height: 28px;
+  }
+
+  /* СЕКЦИЯ 1: HERO */
+  .hero__logo {
+    margin-bottom: 10px;
+  }
+  .hero__shapes {
+    max-height: 250px;
+  }
+  .hero__text {
+    margin-top: 50px;
+  }
+  .hero__title {
+    max-width: 100%;
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .hero__button-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hero__btn {
+    max-width: 100%;
+    font-size: 12px;
+    padding: 10px 16px;
+    line-height: 32px;
+  }
+  .hero__desc {
+    font-size: 11px;
+    line-height: 28px;
+  }
+
+  /* СЕКЦИЯ 2: УСЛУГИ ПРОДВИЖЕНИЯ */
+  .promotion__box {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .promotion__item {
+    height: 130px;
+    padding: 10px 0 12px 0;
+    gap: 12px;
+  }
+  .promotion__item-title {
+    font-size: 12px;
+  }
+
+  /* СЕКЦИЯ 3: ПОРТФОЛИО */
+  .sites__slider {
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 8px 15px 8px;
+  }
+  .img-fix {
+    height: 150px;
+  }
+  .sites__item-title {
+    font-size: 16px;
+  }
+  .sites__btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  /* СЕКЦИЯ 4: ЦЕНЫ */
+  .prices__box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .prices__item {
+    width: 100%;
+    padding: 12px 10px 10px 10px;
+    height: auto;
+  }
+  .prices__item-title {
+    font-size: 18px;
+  }
+  .prices__item-price {
+    font-size: 12px;
+  }
+  .prices__item-desc {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    gap: 10px;
+    padding-left: 15px;
+  }
+  .prices__item-text {
+    font-size: 11px;
+  }
+  .prices__btn {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  /* СЕКЦИЯ 5: АКЦИИ */
+  .stoks__top {
+    flex-direction: column;
+  }
+  .stoks__content {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .stoks__content-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  .stoks__list-item {
+    margin-bottom: 12px;
+    padding-left: 15px;
+  }
+  .stoks__form {
+    max-width: 100%;
+    padding: 12px 12px 15px 12px;
+  }
+  .stoks__form-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .stoks__form-input,
+  .stoks__form-text {
+    max-width: 100%;
+    padding: 10px 6px;
+    margin-bottom: 12px;
+  }
+  .stoks__form__input::placeholder,
+  .stoks__form__text::placeholder {
+    font-size: 12px;
+  }
+  .stoks__btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-top: 12px;
+  }
+  .stoks__text {
+    font-size: 10px;
+  }
+
+  /* СЕКЦИЯ 7: КОМПЛЕКС */
+  .complex__box {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .complex__item {
+    max-width: 100%;
+    padding: 12px;
+    flex-direction: row;
+  }
+  .complex__item-title {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .complex__wrap {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+  }
+
+  /* СЕКЦИЯ 8: БИЗНЕС */
+  .business__items {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .business__item {
+    grid-column: span 1;
+    padding: 12px 12px;
+  }
+  .business__item-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .business__item-description {
+    font-size: 12px;
+  }
+
+  /* СЕКЦИЯ 9: ГАРАНТИИ */
+  .warranty__top {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+  .warranty__description {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  .warranty__form {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 12px 15px 12px;
+    margin-bottom: 15px;
+  }
+  .warranty__input {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 10px 12px 6px 12px;
+    height: 44px;
+  }
+  .warranty__input::placeholder {
+    font-size: 14px;
+  }
+  .warranty__btn {
+    max-width: 100%;
+    font-size: 14px;
+    height: 44px;
+  }
+  .warranty__text {
+    font-size: 13px;
+  }
+
+  /* СЕКЦИЯ 10: КАЛЬКУЛЯТОР */
+  .calculator__top {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .calculator__top-icon {
+    margin-right: 0;
+  }
+  .calculator__content {
+    min-height: auto;
+  }
+  .calculator__steps {
+    gap: 6px;
+    overflow-x: auto;
+  }
+  .calculator__number {
+    width: auto;
+    min-width: 90px;
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+  .calculator__items {
+    max-width: 100%;
+    top: 40px;
+  }
+  .calculator__item {
+    padding: 10px 12px 12px 12px;
+  }
+  .calculator__item-title {
+    font-size: 14px;
+  }
+  .calculator__item-description {
+    font-size: 12px;
+  }
+  .calculator__region {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .calculator__city {
+    gap: 10px;
+  }
+  .calculator__city input[type="radio"] {
+    width: 18px;
+    height: 18px;
+  }
+  .calculator__city-title {
+    font-size: 12px;
+  }
+  .calculator__row-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  /* СЕКЦИЯ 11: КЕЙСЫ */
+  .cases__top {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .cases__title {
+    max-width: 100%;
+  }
+  .cases__content {
+    min-height: auto;
+  }
+  .cases__content-top {
+    gap: 6px;
+    overflow-x: auto;
+  }
+  .cases__content-item {
+    max-width: 100%;
+    min-width: 90px;
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+  .cases__items {
+    max-width: 100%;
+    top: 40px;
+  }
+  .cases__item {
+    padding: 10px 12px 20px 12px;
+  }
+  .cases__item-box {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .cases__item-left {
+    max-width: 100%;
+  }
+  .cases__item-text {
+    max-width: 100%;
+  }
+  .cases__item-title,
+  .cases__item-link {
+    font-size: 13px;
+  }
+  .cases__toggle {
+    gap: 12px;
+  }
+  .cases__switch {
+    width: 60px;
+    height: 34px;
+  }
+  .cases__slider::before {
+    height: 24px;
+    width: 24px;
+  }
+  .cases__input:checked + .cases__slider::before {
+    transform: translateX(30px);
+  }
+  .cases__text-before,
+  .cases__text-after,
+  .cases__toggle-title {
+    font-size: 12px;
+  }
+  .cases__p-before,
+  .cases__p-after {
+    font-size: 12px;
+  }
+  .cases__item-right {
+    max-width: 100%;
+  }
+  .graf {
+    height: 150px;
+    margin-left: 0;
+  }
+  .graf__title {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .graf__number {
+    font-size: 10px;
+  }
+  .graf__item-line {
+    height: 150px;
+    width: 15px;
+  }
+  .graf__item-month.before,
+  .graf__item-month.after {
+    font-size: 10px;
+  }
+  .cases__item-img {
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  /* ИЗОБРАЖЕНИЯ */
+  .hero__logo-img {
+    max-width: 140px;
+  }
+  .promotion__item-img {
+    width: 45px;
+    height: 45px;
+  }
+  .work__back {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+  .warranty__icon {
+    width: 50px;
+    height: 50px;
+  }
+}
