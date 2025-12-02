@@ -50,6 +50,9 @@ a {
 .section {
   margin-bottom: 140px;
 }
+.section:last-child {
+  margin-bottom: 0;
+}
 /* Фон основной области */
 .main {
   background: rgba(249, 249, 249, 1);
@@ -426,6 +429,8 @@ a {
 /* Изображение слайда */
 .sites__item-img {
   width: 100%;
+  max-height: 645px;
+  height: 100%;
 }
 /* Кнопка "Хочу также!" */
 .sites__btn {
@@ -437,6 +442,7 @@ a {
   font-size: 26px;
   font-weight: 500;
   margin-top: 25px;
+  margin: 25px 0 10px 5px;
   transition: all 0.5s ease;
 }
 /* Эффект при наведении на кнопку */
@@ -668,6 +674,9 @@ a {
 .complex__item:hover .complex__item-icon {
   background: #80b3ff;
 }
+.complex__item:hover .complex__wrap {
+  background: #80b3ff;
+}
 /* Заголовок услуги комплекса */
 .complex__item-title {
   color: rgba(0, 0, 0, 1);
@@ -686,6 +695,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
 }
 
 /* ==================== СЕКЦИЯ 8: ПРЕИМУЩЕСТВА ДЛЯ БИЗНЕСА ==================== */
@@ -1003,7 +1013,7 @@ a {
 .cases__content-top {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 34px;
 }
 /* Элемент переключателя */
 .cases__content-item {
@@ -1312,4 +1322,179 @@ a {
 /* Активный скриншот */
 .cases__item-img.active {
   display: block;
+}
+
+/* ==================== СЕКЦИЯ 12: КЛЮЧЕВАЯ ИНФОРМАЦИЯ ==================== */
+/* Основной контент */
+.information__content {
+  margin-top: 74px;
+  position: relative;
+  min-height: 470px;
+}
+/* Шаги с информацией */
+.information__steps {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+/* Конкретный шаг с информацией */
+.information__step {
+  padding: 16px 40px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(231, 241, 255, 1);
+  border-radius: 20px 20px 0 0;
+  color: rgba(128, 179, 255, 1);
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+}
+/* Активный шаг */
+.information__step.active {
+  background: white;
+  color: black;
+}
+/* Контейнер с частями информации */
+.information__items {
+  position: absolute;
+  z-index: 2;
+  top: 58px;
+  width: 100%;
+}
+/* Отдельная часть информации */
+.information__item {
+  padding: 37px 15px;
+  background-color: #fff;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+/* Почему у нас дешевле(блок) */
+.information__why {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 27px;
+}
+/* Почему у нас дешевле(элемент) */
+.information__because {
+  padding: 16px 14px;
+  max-width: 436px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+/* Шар внутри значения */
+.information__because-ball {
+  max-width: 120px;
+  width: 100%;
+  height: 120px;
+  background: rgb(232, 232, 232);
+  box-shadow: inset 1px 10px 10px 1px rgb(173, 173, 173);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* иконка */
+.information__icon {
+  transition: all 0.5s ease;
+  width: 80px;
+  height: 80px;
+}
+.information__because:hover {
+  background-color: #c6c2fe;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.information__because:hover .icon-one {
+  content: url("../assets/svg/geo-hover.svg");
+}
+.information__because:hover .icon-two {
+  content: url("../assets/svg/Star-hover.svg");
+}
+.information__because:hover .icon-three {
+  content: url("../assets/svg/Speaker-hover.svg");
+}
+.information__because:hover .icon-four {
+  content: url("../assets/svg/Windows-hover.svg");
+}
+.information__because:hover .icon-five {
+  content: url("../assets/svg/brain-hover.svg");
+}
+.information__because:hover .icon-six {
+  content: url("../assets/svg/Medal-hover.svg");
+}
+/* Текст элемента */
+.information__because-description {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  max-width: 273px;
+  width: 100%;
+}
+
+/* ==================== СЕКЦИЯ 13: ЧТО ТАКОЕ СЕО ==================== */
+.seo__title {
+  margin-bottom: 74px;
+}
+.seo__back {
+  max-width: 1396px;
+  width: 100%;
+  height: 900px;
+}
+
+/* ==================== СЕКЦИЯ 14: ВСЁ О СЕО-ПРОДВИЖЕНИИ ==================== */
+/* Контейнер с заголовком */
+.blog__top {
+  margin-bottom: 74px;
+}
+/* Основной контент секции */
+.blog__content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* Элемент сетки */
+.blog__item {
+  background-color: #fff;
+  max-width: 450px;
+  width: 100%;
+  height: 410px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}
+/* Второй элемент сетки(большой) */
+.blog__item.big-item {
+  grid-column: span 2;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Текст большого элемента */
+.blog__item-title.big-title {
+  font-weight: 900;
+  font-size: 160px;
+  line-height: 1;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  width: 100%;
+}
+
+/* ==================== СЕКЦИЯ 15: ПРОДВИЖЕНИЕ БЕЗ ДОПЛАТЫ ==================== */
+.free-promotion__top{
+  margin-bottom: 74px;
+}
+.free-promotion__title-img{
+  margin-right: 100px;
 }
