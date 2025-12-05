@@ -89,6 +89,9 @@ a {
   box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
   background: rgba(255, 255, 255, 1);
   padding: 11px 0 22px 0;
+  /* position: sticky;
+  top: 0;
+  z-index: 10; */
 }
 /* Контейнер шапки с уменьшенными отступами */
 .header__container {
@@ -101,6 +104,7 @@ a {
   justify-content: space-between;
 }
 /* Стили для номеров телефонов */
+.header__phones,
 .header__number {
   color: rgba(128, 179, 255, 1);
   font-size: 32px;
@@ -125,6 +129,14 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+/* Логотип */
+.header__logo{
+  transition: all 0.7s ease;
+}
+/* Эффект навидения */ 
+.header__logo:hover{
+  transform: translateY(5px);
+}
 /* Список пунктов меню */
 .nav__list {
   display: flex;
@@ -132,11 +144,8 @@ a {
   gap: 50px;
 }
 /* Стиль для активного пункта меню (Главная) */
-.nav__link-title {
-  color: rgba(0, 0, 0, 1);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 53px;
+.nav__link.active {
+  color: black;
 }
 /* Стиль для обычных пунктов меню */
 .nav__link {
@@ -144,6 +153,16 @@ a {
   font-size: 24px;
   font-weight: 500;
   line-height: 53px;
+  transition: all 0.5s ease;
+  display: inline-block;
+}
+/* При наведении на страницу */
+.nav__link:hover {
+  color: black;
+  transform: scale(1.05);
+}
+.nav__link__img {
+  padding: 0 0 0 5px;
 }
 
 /* ==================== СЕКЦИЯ 1: HERO (ГЛАВНЫЙ ЭКРАН) ==================== */
@@ -182,56 +201,86 @@ a {
 /* Базовый стиль для фигур */
 .shape {
   position: absolute;
+  animation: hero-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: all 1s ease;
 }
 /* Позиционирование фигуры 1 */
 .shape1 {
   top: 15%;
-  left: 10%;
+  left: 9%;
 }
 /* Позиционирование фигуры 2 */
 .shape2 {
-  top: 25%;
+  top: 35%;
   left: 15%;
 }
 /* Позиционирование фигуры 3 */
 .shape3 {
-  top: 10%;
-  left: 20%;
+  top: 25%;
+  left: 22%;
 }
 /* Позиционирование фигуры 4 */
 .shape4 {
-  top: 30%;
-  left: 30%;
+  top: 45%;
+  left: 35%;
 }
 /* Позиционирование фигуры 5 */
 .shape5 {
-  top: 5%;
-  left: 45%;
+  top: 15%;
+  left: 51%;
 }
 /* Позиционирование фигуры 6 */
 .shape6 {
-  top: 8%;
-  left: 52%;
+  top: 14%;
+  left: 57%;
 }
 /* Позиционирование фигуры 7 */
 .shape7 {
-  top: -5%;
-  left: 60%;
+  top: 18%;
+  right: 23%;
 }
 /* Позиционирование фигуры 8 */
 .shape8 {
-  top: 20%;
-  left: 65%;
+  top: 18%;
+  right: 14%;
 }
 /* Позиционирование фигуры 9 */
 .shape9 {
-  top: -5%;
-  left: 75%;
+  bottom: -11%;
+  right: 13%;
 }
 /* Позиционирование фигуры 10 (ракета) */
 .shape10 {
-  top: -5%;
-  left: 75%;
+  bottom: -20%;
+  right: 20%;
+  animation-name: raketa-animation;
+  animation-duration: 2.5s;
+}
+/* Анимация декораций */
+@keyframes hero-animation {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.06);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* Анимация ракеты */
+@keyframes raketa-animation {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: rotate(7deg) scale(1.1);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 /* Текстовый блок героя */
 .hero__text {
@@ -638,6 +687,10 @@ a {
   font-size: 32px;
   font-weight: 900;
   line-height: 50px;
+  transition: all 0.5s;
+}
+.stoks__btn:hover{
+  transform: translateY(5px);
 }
 
 /* ==================== СЕКЦИЯ 7: КОМПЛЕКС УСЛУГ ==================== */
@@ -766,7 +819,8 @@ a {
   margin-bottom: 40px;
 }
 /* Поле ввода телефона */
-.warranty__input {
+.warranty__input,
+.free-promotion__input {
   border-radius: 20px;
   box-shadow: inset 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
   background: rgba(231, 241, 255, 1);
@@ -780,14 +834,16 @@ a {
   line-height: 51px;
 }
 /* Плейсхолдер для поля ввода */
-.warranty__input::placeholder {
+.warranty__input::placeholder,
+.free-promotion__input::placeholder {
   color: rgba(128, 179, 255, 1);
   font-size: 39px;
   font-weight: 300;
   line-height: 51px;
 }
 /* Кнопка отправки формы */
-.warranty__btn {
+.warranty__btn,
+.free-promotion__btn {
   border-radius: 20px;
   box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
   background: rgba(198, 194, 254, 1);
@@ -1492,9 +1548,298 @@ a {
 }
 
 /* ==================== СЕКЦИЯ 15: ПРОДВИЖЕНИЕ БЕЗ ДОПЛАТЫ ==================== */
-.free-promotion__top{
+/* контейнер с заголовком */
+.free-promotion__top {
   margin-bottom: 74px;
 }
-.free-promotion__title-img{
+/* фотка в контейнере заголовка */
+.free-promotion__title-img {
   margin-right: 100px;
+}
+/* Основной контент */
+.free-promotion__content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+}
+/* элемент контейнера */
+.free-promotion__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  height: 410px;
+  padding: 37px;
+  border-radius: 50px;
+  position: relative;
+}
+/* шаги */
+.free-promotion__step {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  z-index: 5;
+  animation-name: ball-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+/* анимация шагов-кружков */
+@keyframes ball-animation {
+  from,
+  to {
+    box-shadow: 0;
+  }
+  5% {
+    box-shadow: 0px 2px 8px 4px rgba(17, 0, 255, 0.05);
+  }
+  10% {
+    box-shadow: 0px 4px 8px 4px rgba(17, 0, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0px 6px 8px 4px rgba(17, 0, 255, 0.3);
+  }
+  90% {
+    box-shadow: 0px 4px 8px 4px rgba(17, 0, 255, 0.1);
+  }
+  95% {
+    box-shadow: 0px 2px 8px 4px rgba(17, 0, 255, 0.05);
+  }
+}
+/* Шар внутри шага */
+.free-promotion__step-ball {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: inset 0px 8px 8px 4px rgba(0, 0, 0, 0.4);
+}
+/* Номер шага */
+.free-promotion__step-number {
+  font-size: 48px;
+  color: #c6c2fe;
+  font-weight: 900;
+}
+.free-promotion__step.right {
+  right: -60px;
+}
+.free-promotion__step.left {
+  left: -60px;
+}
+/* текст элемента */
+.free-promotion__item-description {
+  max-width: 381px;
+  width: 100%;
+  line-height: 34px;
+  font-size: 32px;
+  text-align: center;
+}
+/* Стили для 4-ого элемента */
+.free-promotion__item-img.four {
+  margin-top: 35px;
+}
+.free-promotion__item-description.four {
+  margin-bottom: 30px;
+}
+/* контейнер с продвижением */
+.free-promotion__promotion {
+  background-color: #fff;
+  padding: 23px 40px 46px 40px;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+/* Заголок */
+.free-promotion__promotion-title {
+  margin-bottom: 23px;
+  line-height: 42px;
+  font-size: 32px;
+  text-align: center;
+}
+/* Форма */
+.free-promotion__form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ==================== СЕКЦИЯ 16: ХОТИТЕ СТАТЬ НАШИМ ПАРТНЁРОМ? ==================== */
+.partner__top {
+  margin-bottom: 74px;
+}
+.partner__content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.partner__list {
+  max-width: 750px;
+  width: 100%;
+}
+.partner__list-item {
+  line-height: 55px;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.partner__list-item:last-child {
+  margin-bottom: 0;
+}
+.partner__form {
+  padding: 10px 150px 40px 150px;
+  background-color: #80b3ff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+}
+.partner__form-title {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.partner__form-decor {
+  line-height: 84px;
+  font-size: 32px;
+}
+.partner__input-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.partner__form-input,
+.partner__form-text {
+  max-width: 572px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: inset 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(231, 241, 255, 1);
+  padding: 20px 15px;
+  text-align: center;
+  font-size: 20px;
+}
+/* Плейсхолдеры для полей ввода */
+.partner__form-input::placeholder,
+.partner__form-text::placeholder {
+  color: rgba(128, 179, 255, 1);
+  font-size: 20px;
+  font-weight: 400;
+}
+.partner__form-text {
+  max-width: 1116px;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 25px;
+}
+.partner__text{
+  text-align: center;
+  max-width: 535px;
+  width: 100%;
+  margin: 0 auto 50px auto;
+  font-size: 14px;
+  color: #fff;
+}
+.partner__btn{
+  display: block;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-color: #fff;
+  color: #66B0F9;
+  font-weight: 800;
+  font-size: 32px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  max-width: 450px;
+  width: 100%;
+  transition: all 0.5s ease; 
+}
+.partner__btn:hover{
+  transform: translateY(-5px); 
+}
+/* ==================== СЕКЦИЯ 17: КАК НАС НАЙТИ? ==================== */
+.search, .footer__main{
+  background-color: #C6C2FE;
+}
+.search__container{
+  padding-top: 90px;
+}
+.search__title{
+  color: #000;
+  font-weight: 800;
+  font-size: 64px;
+}
+.search__span{
+  font-size: 180px;
+  color: rgba(0,0,0, 0.10);
+  font-weight: 800;
+}
+.search__content{
+  display: flex;
+  gap: 25px;
+}
+.search__text{
+  font-size: 32px;
+  line-height: 42px;
+}
+.search__text-description{
+  margin-bottom: 50px;
+}
+.search__text-link{
+  text-decoration: underline;
+}
+.search__right{
+  max-width: 828px;
+  width: 100%;
+}
+.search__map{
+  width: 100%;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  height: 646px;
+  border-radius: 20px;
+  display: block;
+}
+.search__btn{
+  display: block;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-color: #fff;
+  color: #66B0F9;
+  font-weight: 800;
+  font-size: 32px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  max-width: 544px;
+  width: 100%;
+  transition: all 0.5s ease; 
+}
+.search__btn:hover{
+  transform: translateY(-5px); 
+}
+
+/* ==================== HEADER (ПОДВАЛ) ==================== */
+.footer{
+  padding: 60px 50px 80px 50px;
+  text-align: center;
+}
+.footer__title{
+  font-size: 40px;
+}
+.footer__nav{
+  margin-top: 20px;
+  font-size: 24px;
+}
+.footer__link{
+  text-decoration: underline;
 }

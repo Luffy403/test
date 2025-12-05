@@ -325,6 +325,152 @@
     height: auto;
     margin-right: 50px;
   }
+  .free-promotion__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .free-promotion__item {
+    height: 350px;
+    padding: 25px;
+  }
+  .free-promotion__item-img {
+    width: 80px;
+    height: 80px;
+  }
+  .free-promotion__item-description {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .free-promotion__step.right {
+    right: -40px;
+  }
+  .free-promotion__step.left {
+    left: -40px;
+  }
+  .free-promotion__promotion {
+    padding: 20px 30px 30px 30px;
+  }
+  .free-promotion__promotion-title {
+    font-size: 28px;
+  }
+  .free-promotion__form {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .free-promotion__input {
+    font-size: 32px;
+    padding: 16px 30px 10px 30px;
+    height: 80px;
+  }
+  .free-promotion__input::placeholder {
+    font-size: 32px;
+  }
+  .free-promotion__btn {
+    font-size: 32px;
+    height: 80px;
+  }
+
+  /* ==================== СЕКЦИЯ 16: ХОТИТЕ СТАТЬ НАШИМ ПАРТНЁРОМ? - АДАПТАЦИЯ ==================== */
+  .partner__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .partner__content-img {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .partner__list {
+    max-width: 100%;
+  }
+  .partner__list-item {
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .partner__form {
+    padding: 20px 80px 30px 80px;
+  }
+  .partner__form-title {
+    font-size: 18px;
+  }
+  .partner__form-decor {
+    font-size: 28px;
+    line-height: 60px;
+  }
+  .partner__input-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .partner__form-input,
+  .partner__form-text {
+    max-width: 100%;
+    padding: 16px 12px;
+  }
+  .partner__form-input::placeholder,
+  .partner__form-text::placeholder {
+    font-size: 18px;
+  }
+  .partner__text {
+    max-width: 100%;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .partner__btn {
+    font-size: 28px;
+    padding: 16px 25px;
+  }
+
+  /* ==================== СЕКЦИЯ 17: КАК НАС НАЙТИ? - АДАПТАЦИЯ ==================== */
+  .search__container {
+    padding-top: 60px;
+  }
+  .search__title {
+    font-size: 56px;
+  }
+  .search__span {
+    font-size: 140px;
+  }
+  .search__content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .search__left {
+    width: 100%;
+  }
+  .search__text {
+    font-size: 28px;
+  }
+  .search__text-description {
+    margin-bottom: 30px;
+  }
+  .search__right {
+    max-width: 100%;
+  }
+  .search__map {
+    height: 500px;
+  }
+  .search__btn {
+    font-size: 28px;
+    padding: 16px 25px;
+    max-width: 100%;
+  }
+
+  /* ==================== FOOTER - АДАПТАЦИЯ ==================== */
+  .footer {
+    padding: 40px 30px 50px 30px;
+  }
+  .footer__title {
+    font-size: 32px;
+  }
+  .footer__nav {
+    font-size: 20px;
+  }
+  .footer__link {
+    display: block;
+    margin-bottom: 5px;
+  }
 
   /* ИЗОБРАЖЕНИЯ */
   .hero__logo-img {
@@ -769,6 +915,153 @@
     margin-right: 0;
     order: -1;
     width: 120px;
+  }
+  .free-promotion__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  .free-promotion__item {
+    height: 250px;
+    padding: 20px;
+  }
+  .free-promotion__item-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .free-promotion__item-img.four {
+    margin-top: 20px;
+  }
+  .free-promotion__item-description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .free-promotion__item-description.four {
+    margin-bottom: 20px;
+  }
+  .free-promotion__step {
+    padding: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .free-promotion__step.right {
+    right: -30px;
+  }
+  .free-promotion__step.left {
+    left: -30px;
+  }
+  .free-promotion__step-ball {
+    width: 50px;
+    height: 50px;
+  }
+  .free-promotion__step-number {
+    font-size: 32px;
+  }
+  .free-promotion__promotion-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .free-promotion__input {
+    font-size: 22px;
+    padding: 14px 20px 8px 20px;
+    height: 60px;
+  }
+  .free-promotion__input::placeholder {
+    font-size: 22px;
+  }
+  .free-promotion__btn {
+    font-size: 22px;
+    height: 60px;
+    padding: 14px 18px;
+  }
+
+  /* ==================== СЕКЦИЯ 16: ХОТИТЕ СТАТЬ НАШИМ ПАРТНЁРОМ? - АДАПТАЦИЯ ==================== */
+  .partner__top {
+    margin-bottom: 40px;
+  }
+  .partner__content-img {
+    width: 250px;
+  }
+  .partner__list-item {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .partner__form {
+    padding: 20px 40px 25px 40px;
+  }
+  .partner__form-title {
+    font-size: 16px;
+  }
+  .partner__form-decor {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .partner__form-input,
+  .partner__form-text {
+    padding: 14px 10px;
+  }
+  .partner__form-input::placeholder,
+  .partner__form-text::placeholder {
+    font-size: 16px;
+  }
+  .partner__text {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+  .partner__btn {
+    font-size: 22px;
+    padding: 14px 20px;
+  }
+
+  /* ==================== СЕКЦИЯ 17: КАК НАС НАЙТИ? - АДАПТАЦИЯ ==================== */
+  .search__container {
+    padding-top: 40px;
+  }
+  .search__title {
+    font-size: 36px;
+  }
+  .search__span {
+    font-size: 80px;
+    display: block;
+    text-align: center;
+    margin: 10px 0 20px 0;
+  }
+  .search__text {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .search__text-description {
+    margin-bottom: 20px;
+  }
+  .search__map {
+    height: 350px;
+  }
+  .search__btn {
+    font-size: 20px;
+    padding: 14px 20px;
+  }
+
+  /* ==================== FOOTER - АДАПТАЦИЯ ==================== */
+   .footer {
+    padding: 30px 20px 40px 20px;
+  }
+  .footer__title {
+    font-size: 24px;
+  }
+  .footer__nav {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .footer__link {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .footer__link-text {
+    display: block;
+    margin-bottom: 5px;
   }
 
   /* ИЗОБРАЖЕНИЯ */
@@ -1270,6 +1563,169 @@
   .free-promotion__title-img {
     width: 100px;
   }
+  .free-promotion__content {
+    gap: 12px;
+  }
+  .free-promotion__item {
+    height: 200px;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  .free-promotion__item-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .free-promotion__item-img.four {
+    margin-top: 15px;
+  }
+  .free-promotion__item-description {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .free-promotion__item-description strong {
+    font-size: 18px;
+  }
+  .free-promotion__step {
+    padding: 8px;
+  }
+  .free-promotion__step.right {
+    right: -20px;
+  }
+  .free-promotion__step.left {
+    left: -20px;
+  }
+  .free-promotion__step-ball {
+    width: 40px;
+    height: 40px;
+  }
+  .free-promotion__step-number {
+    font-size: 24px;
+  }
+  .free-promotion__promotion {
+    padding: 15px 20px 20px 20px;
+  }
+  .free-promotion__promotion-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .free-promotion__input {
+    font-size: 18px;
+    padding: 12px 15px 6px 15px;
+    height: 50px;
+  }
+  .free-promotion__input::placeholder {
+    font-size: 18px;
+  }
+  .free-promotion__btn {
+    font-size: 18px;
+    height: 50px;
+    padding: 12px 16px;
+  }
+
+  /* ==================== СЕКЦИЯ 16: ХОТИТЕ СТАТЬ НАШИМ ПАРТНЁРОМ? - АДАПТАЦИЯ ==================== */
+  .partner__top {
+    margin-bottom: 30px;
+  }
+  .partner__content {
+    gap: 30px;
+    margin-bottom: 25px;
+  }
+  .partner__content-img {
+    width: 200px;
+  }
+  .partner__list-item {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+  .partner__form {
+    padding: 15px 20px 20px 20px;
+  }
+  .partner__form-title {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .partner__form-decor {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .partner__input-row {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .partner__form-input,
+  .partner__form-text {
+    padding: 12px 8px;
+  } 
+  .partner__form-input::placeholder,
+  .partner__form-text::placeholder {
+    font-size: 14px;
+  }
+  .partner__form-text {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .partner__text {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+  .partner__btn {
+    font-size: 18px;
+    padding: 12px 16px;
+  }
+
+  /* ==================== СЕКЦИЯ 17: КАК НАС НАЙТИ? - АДАПТАЦИЯ ==================== */
+  .search__container {
+    padding-top: 30px;
+  }
+  .search__title {
+    font-size: 28px;
+    text-align: center;
+  }
+  .search__span {
+    font-size: 60px;
+  }
+  .search__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .search__text-description {
+    margin-bottom: 15px;
+  }
+  .search__text-decor {
+    font-size: 20px;
+  }
+  .search__text-number {
+    font-size: 20px;
+  }
+  .search__map {
+    height: 250px;
+    border-radius: 15px;
+  }
+  .search__btn {
+    font-size: 16px;
+    padding: 12px 16px;
+    max-width: 100%;
+  }
+
+  /* ==================== FOOTER - АДАПТАЦИЯ ==================== */
+  .footer {
+    padding: 20px 15px 30px 15px;
+  }
+  .footer__title {
+    font-size: 20px;
+  }
+  .footer__nav {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .footer__link {
+    display: block;
+    margin: 3px 0;
+  }
 
   /* ИЗОБРАЖЕНИЯ */
   .hero__logo-img {
@@ -1741,6 +2197,128 @@
   /* СЕКЦИЯ 15: ПРОДВИЖЕНИЕ БЕЗ ПРЕДОПЛАТЫ */
   .free-promotion__title-img {
     width: 80px;
+  }
+  .free-promotion__item {
+    height: 180px;
+    padding: 12px;
+    border-radius: 20px;
+  }
+  .free-promotion__item-img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  .free-promotion__item-description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  .free-promotion__item-description strong {
+    font-size: 16px;
+  }
+  .free-promotion__step {
+    padding: 6px;
+  }
+  .free-promotion__step.right {
+    right: -15px;
+  }
+  .free-promotion__step.left {
+    left: -15px;
+  }
+  .free-promotion__step-ball {
+    width: 35px;
+    height: 35px;
+  }
+  .free-promotion__step-number {
+    font-size: 20px;
+  }
+  .free-promotion__promotion-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .free-promotion__input {
+    font-size: 16px;
+    padding: 10px 12px 4px 12px;
+    height: 44px;
+  }
+  .free-promotion__input::placeholder {
+    font-size: 16px;
+  }
+  .free-promotion__btn {
+    font-size: 16px;
+    height: 44px;
+    padding: 10px 14px;
+  }
+
+  /* ==================== СЕКЦИЯ 16: ХОТИТЕ СТАТЬ НАШИМ ПАРТНЁРОМ? - АДАПТАЦИЯ ==================== */
+  .partner__content-img {
+    width: 150px;
+  }
+  .partner__list-item {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+  .partner__form {
+    padding: 12px 15px 15px 15px;
+  }
+  .partner__form-title {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .partner__form-decor {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .partner__form-input,
+  .partner__form-text {
+    padding: 10px 6px;
+  }
+  .partner__form-input::placeholder,
+  .partner__form-text::placeholder {
+    font-size: 13px;
+  }
+  .partner__text {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+  .partner__btn {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  /* ==================== СЕКЦИЯ 17: КАК НАС НАЙТИ? - АДАПТАЦИЯ ==================== */
+  .search__title {
+    font-size: 24px;
+  }
+  .search__span {
+    font-size: 50px;
+  }
+  .search__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .search__text-decor {
+    font-size: 18px;
+  }
+  .search__text-number {
+    font-size: 18px;
+  }
+  .search__map {
+    height: 200px;
+    border-radius: 10px;
+  }
+  .search__btn {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  /* ==================== FOOTER - АДАПТАЦИЯ ==================== */
+   .footer__title {
+    font-size: 18px;
+  }
+  .footer__nav {
+    font-size: 13px;
   }
 
   /* ИЗОБРАЖЕНИЯ */

@@ -32,13 +32,21 @@
         <!-- Блок с контактной информацией -->
         <div class="header__text">
           <div class="header__number-text">
-            <span class="header__number">8-800-1000-859</span>
+            <a href="tel:88001000859" class="header__number">8-800-1000-859</a>
             <p class="header__title">Бесплатно по РФ</p>
           </div>
-          <span class="header__number"
-            >+7 (965) 558-88-89 / +7 (495) 2-666-724</span
+          <div class="header__phones">
+            <a class="header__number" href="tel:79655588889"
+              >+7 (965) 558-88-89</a
+            >
+            /
+            <a class="header__number" href="tel:74952666724">
+              +7 (495) 2-666-724</a
+            >
+          </div>
+          <a href="mailto:seo@rus.ms" class="header__number"
+            >e-mail: seo@rus.ms</a
           >
-          <span class="header__number">e-mail: seo@rus.ms</span>
         </div>
       </div>
       <!-- Декоративная линия-разделитель -->
@@ -46,13 +54,31 @@
       <div class="container header__container">
         <!-- Основная навигация -->
         <nav class="nav">
-          <img class="header__logo" src="assets/img/Logo.png" alt="Логотип" />
+          <a href="index.html"
+            ><img class="header__logo" src="assets/img/Logo.png" alt="Логотип"
+          /></a>
           <!-- Меню навигации -->
           <ul class="nav__list">
-            <li><a class="nav__link nav__link-title" href="#">Главная</a></li>
-            <li><a class="nav__link" href="#">Услуги🡻</a></li>
-            <li><a class="nav__link" href="#">Портфолио🡻</a></li>
-            <li><a class="nav__link" href="#">Вопросы🡻</a></li>
+            <li><a class="nav__link active" href="index.html">Главная</a></li>
+            <li><a class="nav__link" href="#">Услуги</a></li>
+            <li>
+              <a class="nav__link" href="#"
+                >Портфолио
+                <img
+                  class="nav__link__img"
+                  src="assets/img/vector-header.png"
+                  alt="вектор"
+              /></a>
+            </li>
+            <li>
+              <a class="nav__link" href="#"
+                >Вопросы
+                <img
+                  class="nav__link__img"
+                  src="assets/img/vector-header.png"
+                  alt="вектор"
+              /></a>
+            </li>
             <li><a class="nav__link" href="#">Контакты</a></li>
             <li><a class="nav__link" href="#">Ценовая политика</a></li>
           </ul>
@@ -1214,11 +1240,13 @@
       <!-- ==================== СЕКЦИЯ 13: ЧТО ТАКОЕ СЕО ==================== -->
       <section class="seo section">
         <div class="container seo__container">
+          <!-- Заголовок -->
           <h2 class="seo__title section__title">
             <span class="seo__title-decor section__title-decor">ЧТО ТАКОЕ</span
             ><br />
             СЕО-ПРОДВИЖЕНИЕ САЙТА
           </h2>
+          <!-- Фоновая картинка -->
           <img src="assets/img/seo-back-img.png" class="seo__back" alt="фон" />
         </div>
       </section>
@@ -1269,14 +1297,269 @@
               ><br />
               БЕЗ ПРЕДОПЛАТЫ
             </h2>
-            <img src="assets/img/zero-price.png" class="free-promotion__title-img" alt="деньги">
+            <img
+              src="assets/img/zero-price.png"
+              class="free-promotion__title-img"
+              alt="деньги"
+            />
           </div>
+          <!-- Контейнер с элементами -->
           <div class="free-promotion__content">
-            
+            <!-- 1-ый элемент -->
+            <div class="free-promotion__item">
+              <img
+                src="assets/img/Frame.png"
+                class="free-promotion__item-img"
+                alt="Монитор"
+              />
+              <p class="free-promotion__item-description">
+                Присылаете Ваш сайт и фразы, по которым хотите продвигаться
+              </p>
+              <div class="free-promotion__step right">
+                <div class="free-promotion__step-ball">
+                  <span class="free-promotion__step-number">1</span>
+                </div>
+              </div>
+            </div>
+            <!-- 2-ой элемент -->
+            <div class="free-promotion__item">
+              <img
+                src="assets/img/Лупа.png"
+                class="free-promotion__item-img"
+                alt="Лупа"
+              />
+              <p class="free-promotion__item-description">
+                Мы исследуем возможность его вывода в ТОП 10
+              </p>
+              <div class="free-promotion__step right">
+                <div class="free-promotion__step-ball">
+                  <span class="free-promotion__step-number">2</span>
+                </div>
+              </div>
+            </div>
+            <!-- 3-ий элемент -->
+            <div class="free-promotion__item">
+              <img
+                src="assets/img/Лист.png"
+                class="free-promotion__item-img"
+                alt="Лист"
+              />
+              <p class="free-promotion__item-description">
+                Если возможность продвижения есть, заключаем договор
+              </p>
+              <div class="free-promotion__step right">
+                <div class="free-promotion__step-ball">
+                  <span class="free-promotion__step-number">3</span>
+                </div>
+              </div>
+            </div>
+            <!-- 4-ый элемент -->
+            <div class="free-promotion__item">
+              <img
+                src="assets/img/zero.png"
+                class="free-promotion__item-img four"
+                alt="бесплатно"
+              />
+              <p class="free-promotion__item-description">
+                <strong>БЕЗ ПРЕДОПЛАТЫ</strong><br />фиксируем начальные позиции
+                сайта и начинается работа
+              </p>
+              <div class="free-promotion__step left">
+                <div class="free-promotion__step-ball">
+                  <span class="free-promotion__step-number">4</span>
+                </div>
+              </div>
+            </div>
+            <!-- 5-ый элемент -->
+            <div class="free-promotion__item">
+              <img
+                src="assets/img/arrow-small.png"
+                class="free-promotion__item-img"
+                alt="Стрелки"
+              />
+              <p class="free-promotion__item-description four">
+                Видим результат
+              </p>
+              <div class="free-promotion__step left">
+                <div class="free-promotion__step-ball">
+                  <span class="free-promotion__step-number">5</span>
+                </div>
+              </div>
+            </div>
+            <!-- 6-ый элемент -->
+            <div class="free-promotion__item">
+              <img
+                src="assets/img/money.png"
+                class="free-promotion__item-img"
+                alt="Монетка"
+              />
+              <p class="free-promotion__item-description">
+                Производится оплата согласно договоренностям
+              </p>
+              <div class="free-promotion__step left">
+                <div class="free-promotion__step-ball">
+                  <span class="free-promotion__step-number">6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Форма заявки на продвижение -->
+          <div class="free-promotion__promotion">
+            <h3 class="free-promotion__promotion-title">
+              СНАЧАЛА РЕЗУЛЬТАТ ПОТОМ ОПЛАТА
+            </h3>
+            <form method="post" class="free-promotion__form">
+              <input
+                type="number"
+                class="free-promotion__input"
+                name="phone"
+                minlength="6"
+                maxlength="11"
+                placeholder="+7 (___) __ - ___ - __"
+                required
+              />
+              <button type="submit" class="free-promotion__btn">
+                ЗАКАЗАТЬ ПРОДВИЖЕНИЕ
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== СЕКЦИЯ 16: ХОТИТЕ СТАТЬ НАШИМ ПАРТНЁРОМ? ==================== -->
+      <section class="partner section">
+        <div class="container partner__container">
+          <div class="partner__top">
+            <h2 class="partner__title section__title">
+              <span class="partner__title-decor section__title-decor"
+                >ХОТИТЕ СТАТЬ</span
+              >
+              НАШИМ ПАРТНЁРОМ
+              <span class="partner__title-decor section__title-decor">?</span>
+            </h2>
+          </div>
+          <div class="partner__content">
+            <img
+              src="assets/img/numbers.png"
+              class="partner__content-img"
+              alt="Пазл"
+            />
+            <ol class="partner__list">
+              <li class="partner__list-item">ВЫСКИЙ ПРОЦЕНТ С КАЖДОГО РАЗА</li>
+              <li class="partner__list-item">
+                ВОЗМОЖНА ОТЧЁТНОСТЬ ОТ ВАШЕГО ИМЕНИ
+              </li>
+              <li class="partner__list-item">
+                ВОЗМОЖНА РАБОТА ПО ПАРТНЁРСКОМУ ДОГОВОРУ
+              </li>
+              <li class="partner__list-item">
+                РАЗНООБРАЗНЫЕ БОНУСНЫЕ ПРОГРАММЫ
+              </li>
+            </ol>
+          </div>
+          <form method="post" class="partner__form">
+            <h3 class="partner__form-title">
+              <strong class="partner__form-decor">ОСТАВЬТЕ ЗАЯВКУ</strong
+              ><br />И получите квалифицированную консультацию от наших
+              специалистов!
+            </h3>
+            <div class="partner__input-row">
+              <input
+                class="partner__form-input"
+                type="text"
+                name="name"
+                minlength="3"
+                placeholder="Введите ваше имя"
+                required
+              />
+              <input
+                class="partner__form-input"
+                type="text"
+                name="contact"
+                minlength="6"
+                placeholder="Введите ваш номер телефона или e-mail"
+                required
+              />
+            </div>
+            <textarea
+              class="partner__form-text"
+              name="text"
+              minlength="6"
+              maxlength="70"
+              placeholder="Введите текст сообщения"
+              required
+            ></textarea>
+            <p class="partner__text">
+              Нажимая на кнопку, я принимаю условия пользовательского соглашения
+              и даю согласие на обработку персональных данных
+            </p>
+            <button class="partner__btn" type="submit">ОТПРАВИТЬ</button>
+          </form>
+        </div>
+      </section>
+      <!-- ==================== СЕКЦИЯ 17: КАК НАС НАЙТИ? ==================== -->
+      <section class="search section">
+        <div class="container search__container">
+          <h2 class="search__title">КАК НАС НАЙТИ</h2>
+          <span class="search__span">МЫ НА СВЯЗИ</span>
+          <div class="search__content">
+            <div class="search__left">
+              <div class="search__text">
+                <p class="search__text-description">
+                  <strong class="search__text-decor">Адресс:</strong>
+                  Россия, Чайковский,<br />
+                  Мира, 2/4
+                </p>
+                <p class="search__text-description">
+                  <strong class="search__text-decor"
+                    >Звоните!<br />С 9:00 до 18:00:</strong
+                  ><br />
+                  <span class="search__text-number">8-965-55-88-889</span><br />
+                  <span class="search__text-number">8-800-1000-859</span><br />
+                  <span class="search__text-number"
+                    >(Звонок бесплатный по России)</span
+                  >
+                </p>
+                <p class="search__text-description">
+                  <strong class="search__text-decor"
+                    >Пишите! В любое время:</strong
+                  ><br />
+                  <a
+                    href="mail-torakov-roman@yandex.ru"
+                    class="search__text-link"
+                    >rakov-roman@yandex.ru,</a
+                  ><span class="search__text-span"> сео.орг</span>
+                </p>
+                <button class="search__btn" type="submit">
+                  ОТПРАВТЬЕ ЗАЯВКУ НА КОНСУЛЬТАЦИЮ
+                </button>
+              </div>
+            </div>
+            <div class="search__right">
+              <iframe
+                class="search__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2185.9244294573637!2d54.131952376650524!3d56.77860247348113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e7298ed3e1f273%3A0x335065b8e5926795!2z0YPQuy4g0JzQuNGA0LAsIDIg0LrQvtGA0L_Rg9GBIDQsINCn0LDQudC60L7QstGB0LrQuNC5LCDQn9C10YDQvNGB0LrQuNC5INC60YDQsNC5LCA2MTc3NjM!5e0!3m2!1sru!2sru!4v1764929488278!5m2!1sru!2sru"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer footer__main">
+      <div class="container footer__container">
+        <strong class="footer__title"
+          >Остались вопросы? Задайте их менеджеру</strong
+        >
+        <nav class="footer__nav">
+          <a class="footer__link" href="https://сео.орг/">СЕО.ОРГ</a>
+          <span class="footer__link-text">ТЕЛЕФОНЫ:</span>
+          <a class="footer__link" href="tel:89655588889">8 (965) 55-88-889|</a
+          ><a class="footer__link" href="tel:83424145623">8 (34241) 45623|</a
+          ><a class="footer__link" href="tel:88001000859">8-800-1000-859|</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
