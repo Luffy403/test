@@ -8,6 +8,7 @@
       content="Это страница сайта SEO.орг. Мы занимаемся разработкой сайта под ключ"
     />
     <!-- Стили -->
+    <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/media.css" />
     <!-- Иконка сайта -->
@@ -23,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <title>СЕО.орг</title>
+    <title>СЕО.орг - компания по seo продвижению сайтов</title>
   </head>
   <body>
     <!-- ==================== HEADER ==================== -->
@@ -39,7 +40,7 @@
             <a class="header__number" href="tel:79655588889"
               >+7 (965) 558-88-89</a
             >
-            /
+            <span class="header__number-decor">/</span>
             <a class="header__number" href="tel:74952666724">
               +7 (495) 2-666-724</a
             >
@@ -61,29 +62,74 @@
           <ul class="nav__list">
             <li><a class="nav__link active" href="index.html">Главная</a></li>
             <li><a class="nav__link" href="#">Услуги</a></li>
-            <li>
-              <a class="nav__link" href="#"
-                >Портфолио
-                <img
-                  class="nav__link__img"
+            <li class="dropdown">
+              <div class="dropdown__toggle">
+                <a class="nav__link" href="#">Портфолио</a
+                ><img
+                  class="dropdown__toggle-img"
                   src="assets/img/vector-header.png"
                   alt="вектор"
-              /></a>
+                />
+              </div>
+              <ul class="dropdown__menu">
+                <li class="dropdown__menu-link">
+                  <a href="" class="drop__link"
+                    >Продвижение бухгалтерской компании</a
+                  >
+                </li>
+                <li class="dropdown__menu-link">
+                  <a href="" class="drop__link"
+                    >Продвижение юридической компании</a
+                  >
+                </li>
+                <li class="dropdown__menu-link">
+                  <a href="" class="drop__link"
+                    >Продвижение сайта стоматологии</a
+                  >
+                </li>
+              </ul>
             </li>
-            <li>
-              <a class="nav__link" href="#"
-                >Вопросы
+            <li class="dropdown">
+              <div class="dropdown__toggle">
+                <a class="nav__link" href="#">Вопросы </a>
                 <img
-                  class="nav__link__img"
+                  class="dropdown__toggle-img"
                   src="assets/img/vector-header.png"
                   alt="вектор"
-              /></a>
+                />
+              </div>
+              <ul class="dropdown__menu">
+                <li class="dropdown__menu-link">
+                  <a href="" class="drop__link">Что такое сниппет?</a>
+                </li>
+                <li class="dropdown__menu-link">
+                  <a href="" class="drop__link">Что такое рассылочный взрыв?</a>
+                </li>
+                <li class="dropdown__menu-link">
+                  <a href="" class="drop__link"
+                    >Как сменить СЕО - специалиста?</a
+                  >
+                </li>
+                <li class="dropdown__menu-link">
+                  <a href="" class="drop__link">Минусинск</a>
+                </li>
+                <li class="dropdown__menu-link">
+                  <a href="" class="drop__link"
+                    >Как ускорить загрузку сайта и <br />
+                    какие Core Web Vitals важны?</a
+                  >
+                </li>
+                <li class="dropdown__menu-link">
+                  <a href="" class="drop__link">SEO с помощью ИИ</a>
+                </li>
+              </ul>
             </li>
             <li><a class="nav__link" href="#">Контакты</a></li>
             <li><a class="nav__link" href="#">Ценовая политика</a></li>
           </ul>
         </nav>
       </div>
+      <script src="js/dropdown.js"></script>
     </header>
     <main class="main">
       <!-- ==================== СЕКЦИЯ 1: HERO (ГЛАВНЫЙ ЭКРАН) ==================== -->
@@ -101,43 +147,83 @@
           <div class="hero__shapes">
             <!-- Фигура 1 -->
             <div class="shape shape1">
-              <img src="assets/svg/img_1.svg" alt="Фигура 1" />
+              <img
+                src="assets/svg/img_1.svg"
+                class="shape__img-1"
+                alt="Фигура 1"
+              />
             </div>
             <!-- Фигура 2 -->
             <div class="shape shape2">
-              <img src="assets/svg/img_2.svg" alt="Фигура 2" />
+              <img
+                src="assets/svg/img_2.svg"
+                class="shape__img-2"
+                alt="Фигура 2"
+              />
             </div>
             <!-- Фигура 3 -->
             <div class="shape shape3">
-              <img src="assets/svg/img_3.svg" alt="Фигура 3" />
+              <img
+                src="assets/svg/img_3.svg"
+                class="shape__img-3"
+                alt="Фигура 3"
+              />
             </div>
             <!-- Фигура 4 -->
             <div class="shape shape4">
-              <img src="assets/svg/img_4.svg" alt="Фигура 4" />
+              <img
+                src="assets/svg/img_4.svg"
+                class="shape__img-4"
+                alt="Фигура 4"
+              />
             </div>
             <!-- Фигура 5 -->
             <div class="shape shape5">
-              <img src="assets/svg/img_5.svg" alt="Фигура 5" />
+              <img
+                src="assets/svg/img_5.svg"
+                class="shape__img-5"
+                alt="Фигура 5"
+              />
             </div>
             <!-- Фигура 6 -->
             <div class="shape shape6">
-              <img src="assets/svg/img_6.svg" alt="Фигура 6" />
+              <img
+                src="assets/svg/img_6.svg"
+                class="shape__img-6"
+                alt="Фигура 6"
+              />
             </div>
             <!-- Фигура 7 -->
             <div class="shape shape7">
-              <img src="assets/svg/img_7.svg" alt="Фигура 7" />
+              <img
+                src="assets/svg/img_7.svg"
+                class="shape__img-7"
+                alt="Фигура 7"
+              />
             </div>
             <!-- Фигура 8 -->
             <div class="shape shape8">
-              <img src="assets/svg/img_8.svg" alt="Фигура 8" />
+              <img
+                src="assets/svg/img_8.svg"
+                class="shape__img-8"
+                alt="Фигура 8"
+              />
             </div>
             <!-- Фигура 9 -->
             <div class="shape shape9">
-              <img src="assets/svg/img_9.svg" alt="Фигура 9" />
+              <img
+                src="assets/svg/img_9.svg"
+                class="shape__img-9"
+                alt="Фигура 9"
+              />
             </div>
             <!-- Фигура 10 (ракета) -->
             <div class="shape shape10">
-              <img src="assets/img/Ракета.png" alt="Фигура 9" />
+              <img
+                src="assets/img/Ракета.png"
+                class="shape__img-10"
+                alt="Фигура 10"
+              />
             </div>
           </div>
           <!-- Основной текстовый блок -->
@@ -157,12 +243,14 @@
       <!-- ==================== СЕКЦИЯ 2: УСЛУГИ ПРОДВИЖЕНИЯ ==================== -->
       <section class="promotion section">
         <div class="container promotion__container">
-          <h2 class="promotion__title section__title">
-            КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ<br />
-            <span class="promotion__title-decor section__title-decor"
-              >НА СЕО.ОРГ</span
-            >
-          </h2>
+          <div class="section__top">
+            <h2 class="promotion__title section__title">
+              КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ<br />
+              <span class="promotion__title-decor section__title-decor"
+                >НА СЕО.ОРГ</span
+              >
+            </h2>
+          </div>
           <!-- Сетка услуг (6 элементов) -->
           <div class="promotion__box">
             <!-- Элемент услуги 1: Поисковое продвижение -->
@@ -309,11 +397,13 @@
       <!-- ==================== СЕКЦИЯ 4: ЦЕНЫ ==================== -->
       <section class="prices section">
         <div class="container prices__container">
-          <h2 class="prices__title section__title">
-            <span class="prices__title-decor section__title-decor"
-              >РЕКОМЕНДОВАННЫЕ</span
-            ><br />БЮДЖЕТЫ ДЛЯ ПРОДВИЖЕНИЯ
-          </h2>
+          <div class="section__top">
+            <h2 class="prices__title section__title">
+              <span class="prices__title-decor section__title-decor"
+                >РЕКОМЕНДОВАННЫЕ</span
+              ><br />БЮДЖЕТЫ ДЛЯ ПРОДВИЖЕНИЯ
+            </h2>
+          </div>
           <!-- Контейнер ценовых карточек -->
           <div class="prices__box">
             <!-- Ценовая карточка 1: 18,000 руб -->
@@ -468,12 +558,14 @@
       <!-- ==================== СЕКЦИЯ 7: КОМПЛЕКС УСЛУГ ==================== -->
       <section class="complex section">
         <div class="container complex__container">
-          <h2 class="complex__title section__title">
-            <span class="complex__title-decor section__title-decor"
-              >ПОЛНЫЙ КОМПЛЕКС</span
-            >
-            ПРОДВИЖЕНИЯ
-          </h2>
+          <div class="section__top">
+            <h2 class="complex__title section__title">
+              <span class="complex__title-decor section__title-decor"
+                >ПОЛНЫЙ КОМПЛЕКС</span
+              >
+              ПРОДВИЖЕНИЯ
+            </h2>
+          </div>
           <!-- Сетка услуг комплекса (9 элементов) -->
           <div class="complex__box">
             <!-- Элемент комплекса 1: Аналитика -->
@@ -698,7 +790,7 @@
       <!-- ==================== СЕКЦИЯ 10: КАЛЬКУЛЯТОР СТОИМОСТИ ==================== -->
       <section class="calculator section">
         <div class="container calculator__container">
-          <div class="calculator__top">
+          <div class="calculator__top section__top">
             <h2 class="calculator__title section__title">
               КАЛЬКУЛЯТОР СТОИМОСТИ<br /><span
                 class="calculator__title-decor section__title-decor"
@@ -1130,13 +1222,15 @@
       <!-- ==================== СЕКЦИЯ 12: КЛЮЧЕВАЯ ИНФОРМАЦИЯ ==================== -->
       <section class="information section">
         <div class="container information__container">
-          <!-- Заголовок -->
-          <h2 class="information__title section__title">
-            <span class="information__title-decor section__title-decor"
-              >КЛЮЧЕВАЯ ИНФОРМАЦИЯ О</span
-            >
-            СЕО.ОРГ
-          </h2>
+          <div class="section__top">
+            <!-- Заголовок -->
+            <h2 class="information__title section__title">
+              <span class="information__title-decor section__title-decor"
+                >КЛЮЧЕВАЯ ИНФОРМАЦИЯ О</span
+              >
+              СЕО.ОРГ
+            </h2>
+          </div>
           <!-- Информация  -->
           <div class="information__content">
             <div class="information__steps">
@@ -1240,12 +1334,15 @@
       <!-- ==================== СЕКЦИЯ 13: ЧТО ТАКОЕ СЕО ==================== -->
       <section class="seo section">
         <div class="container seo__container">
-          <!-- Заголовок -->
-          <h2 class="seo__title section__title">
-            <span class="seo__title-decor section__title-decor">ЧТО ТАКОЕ</span
-            ><br />
-            СЕО-ПРОДВИЖЕНИЕ САЙТА
-          </h2>
+          <div class="section__top">
+            <!-- Заголовок -->
+            <h2 class="seo__title section__title">
+              <span class="seo__title-decor section__title-decor"
+                >ЧТО ТАКОЕ</span
+              ><br />
+              СЕО-ПРОДВИЖЕНИЕ САЙТА
+            </h2>
+          </div>
           <!-- Фоновая картинка -->
           <img src="assets/img/seo-back-img.png" class="seo__back" alt="фон" />
         </div>
@@ -1309,7 +1406,7 @@
             <div class="free-promotion__item">
               <img
                 src="assets/img/Frame.png"
-                class="free-promotion__item-img"
+                class="free-promotion__item-img free-promotion-one"
                 alt="Монитор"
               />
               <p class="free-promotion__item-description">
@@ -1325,7 +1422,7 @@
             <div class="free-promotion__item">
               <img
                 src="assets/img/Лупа.png"
-                class="free-promotion__item-img"
+                class="free-promotion__item-img free-promotion-two"
                 alt="Лупа"
               />
               <p class="free-promotion__item-description">
@@ -1341,7 +1438,7 @@
             <div class="free-promotion__item">
               <img
                 src="assets/img/Лист.png"
-                class="free-promotion__item-img"
+                class="free-promotion__item-img free-promotion-three"
                 alt="Лист"
               />
               <p class="free-promotion__item-description">
@@ -1357,7 +1454,7 @@
             <div class="free-promotion__item">
               <img
                 src="assets/img/zero.png"
-                class="free-promotion__item-img four"
+                class="free-promotion__item-img four free-promotion-four"
                 alt="бесплатно"
               />
               <p class="free-promotion__item-description">
@@ -1374,7 +1471,7 @@
             <div class="free-promotion__item">
               <img
                 src="assets/img/arrow-small.png"
-                class="free-promotion__item-img"
+                class="free-promotion__item-img free-promotion-five"
                 alt="Стрелки"
               />
               <p class="free-promotion__item-description four">
@@ -1390,7 +1487,7 @@
             <div class="free-promotion__item">
               <img
                 src="assets/img/money.png"
-                class="free-promotion__item-img"
+                class="free-promotion__item-img free-promotion-six"
                 alt="Монетка"
               />
               <p class="free-promotion__item-description">
@@ -1428,7 +1525,7 @@
       <!-- ==================== СЕКЦИЯ 16: ХОТИТЕ СТАТЬ НАШИМ ПАРТНЁРОМ? ==================== -->
       <section class="partner section">
         <div class="container partner__container">
-          <div class="partner__top">
+          <div class="partner__top section__top">
             <h2 class="partner__title section__title">
               <span class="partner__title-decor section__title-decor"
                 >ХОТИТЕ СТАТЬ</span

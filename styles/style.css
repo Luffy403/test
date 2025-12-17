@@ -1,170 +1,3 @@
-/* ==================== ОБЩИЕ СТИЛИ И СБРОС ==================== */
-
-/* Сброс стилей для всех элементов */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-}
-/* Убираем маркеры у списков */
-ul {
-  list-style: none;
-}
-/* Стили для кнопок */
-button {
-  border: none;
-  outline: none;
-  background: transparent;
-  color: inherit;
-}
-/* Стили для полей ввода */
-input {
-  border: none;
-  outline: none;
-  background: transparent;
-  color: inherit;
-}
-/* Стили для текстовых областей */
-textarea {
-  border: none;
-  outline: none;
-  background: transparent;
-  color: inherit;
-}
-/* Стили для ссылок */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* ==================== БАЗОВЫЕ ШАБЛОНЫ ==================== */
-/* Основной контейнер для центрирования контента */
-.container {
-  max-width: 2032px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 318px;
-}
-/* Отступ между секциями */
-.section {
-  margin-bottom: 140px;
-}
-.section:last-child {
-  margin-bottom: 0;
-}
-/* Фон основной области */
-.main {
-  background: rgba(249, 249, 249, 1);
-}
-/* Заголовок секции */
-.section__title {
-  font-size: 64px;
-  font-weight: 800;
-  color: #80b3ff;
-}
-/* Декоративная часть заголовка (черный текст) */
-.section__title-decor {
-  color: rgb(0, 0, 0);
-}
-/* Стиль для ссылок "Смотреть все" */
-.look-all {
-  color: rgb(128, 179, 255);
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 42px;
-  margin-right: 15px;
-}
-/* Шапка секции с заголовком и ссылкой */
-.section__top {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* ==================== HEADER (ШАПКА) ==================== */
-/* Основной блок шапки */
-.header {
-  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
-  background: rgba(255, 255, 255, 1);
-  padding: 11px 0 22px 0;
-  /* position: sticky;
-  top: 0;
-  z-index: 10; */
-}
-/* Контейнер шапки с уменьшенными отступами */
-.header__container {
-  padding: 0 267px;
-}
-/* Блок с контактной информацией */
-.header__text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-/* Стили для номеров телефонов */
-.header__phones,
-.header__number {
-  color: rgba(128, 179, 255, 1);
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 53px;
-}
-/* Заголовок "Бесплатно по РФ" */
-.header__title {
-  color: rgba(128, 179, 255, 1);
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-/* Декоративная линия-разделитель */
-.header__border {
-  border: 2px solid rgba(198, 194, 254, 1);
-}
-/* Основная навигация */
-.nav {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* Логотип */
-.header__logo{
-  transition: all 0.7s ease;
-}
-/* Эффект навидения */ 
-.header__logo:hover{
-  transform: translateY(5px);
-}
-/* Список пунктов меню */
-.nav__list {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-/* Стиль для активного пункта меню (Главная) */
-.nav__link.active {
-  color: black;
-}
-/* Стиль для обычных пунктов меню */
-.nav__link {
-  color: rgba(198, 194, 254, 1);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 53px;
-  transition: all 0.5s ease;
-  display: inline-block;
-}
-/* При наведении на страницу */
-.nav__link:hover {
-  color: black;
-  transform: scale(1.05);
-}
-.nav__link__img {
-  padding: 0 0 0 5px;
-}
-
 /* ==================== СЕКЦИЯ 1: HERO (ГЛАВНЫЙ ЭКРАН) ==================== */
 /* Основной блок героя с градиентным фоном */
 .hero {
@@ -341,7 +174,6 @@ a {
 /* ==================== СЕКЦИЯ 2: УСЛУГИ ПРОДВИЖЕНИЯ ==================== */
 /* Сетка услуг (3 колонки, 2 ряда) */
 .promotion__box {
-  margin-top: 74px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -380,9 +212,13 @@ a {
 .promotion__item:hover .promotion__item-title {
   color: #fff;
 }
+/* Картинка */
+.promotion__item-img{
+  transition: all 0.7s ease;
+}
 /* Эффект для изображения при наведении */
-.promotion__item:hover .promotion__item__img {
-  transform: scale(1.05);
+.promotion__item:hover .promotion__item-img {
+  transform: scale(1.02);
   filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.9));
 }
 /* Смена иконок на белые при наведении для каждой услуги */
@@ -406,10 +242,6 @@ a {
 }
 
 /* ==================== СЕКЦИЯ 3: ПОРТФОЛИО САЙТОВ ==================== */
-/* Контент секции портфолио */
-.sites__content {
-  margin-top: 73px;
-}
 /* Слайдер портфолио */
 .sites__slider {
   border-radius: 20px;
@@ -419,6 +251,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   gap: 30px;
 }
 /* Элемент слайда */
@@ -510,7 +343,6 @@ a {
 /* ==================== СЕКЦИЯ 4: ЦЕНЫ ==================== */
 /* Контейнер ценовых карточек */
 .prices__box {
-  margin-top: 74px;
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -583,7 +415,6 @@ a {
   background: rgba(128, 179, 255, 1);
   color: rgba(255, 255, 255, 1);
 }
-
 /* ==================== СЕКЦИЯ 5: АКЦИИ И ФОРМА ==================== */
 /* Контейнер контента акции */
 .stoks__content {
@@ -591,7 +422,6 @@ a {
   flex-direction: row;
   gap: 25px;
   align-items: center;
-  margin-top: 74px;
 }
 /* Текстовый блок с преимуществами */
 .stoks__content-text {
@@ -696,7 +526,6 @@ a {
 /* ==================== СЕКЦИЯ 7: КОМПЛЕКС УСЛУГ ==================== */
 /* Сетка комплекса услуг (3x3) */
 .complex__box {
-  margin-top: 73px;
   transition: all 0.5s ease;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -752,10 +581,6 @@ a {
 }
 
 /* ==================== СЕКЦИЯ 8: ПРЕИМУЩЕСТВА ДЛЯ БИЗНЕСА ==================== */
-/* Верхняя часть секции бизнеса */
-.business__top {
-  margin-bottom: 73px;
-}
 /* Сетка преимуществ (12-колоночная сетка) */
 .business__items {
   display: grid;
@@ -797,6 +622,10 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+}
+/* Заголовок */
+.warranty__title{
+  margin-bottom: 74px;
 }
 /* Описание гарантии */
 .warranty__description {
@@ -869,14 +698,6 @@ a {
 }
 
 /* ==================== СЕКЦИЯ 10: КАЛЬКУЛЯТОР СТОИМОСТИ ==================== */
-/* Верхняя часть калькулятора */
-.calculator__top {
-  margin-bottom: 74px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 /* Иконка калькулятора */
 .calculator__top-icon {
   margin-right: 80px;
@@ -1032,13 +853,6 @@ a {
   background: #6ba0f0;
   transform: translateY(-2px);
 }
-/* Дублирующие стили для row (скорее всего можно удалить) */
-.calculator__row {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  align-items: center;
-}
 /* Эффекты для кнопок назад и далее */
 .calculator__btn--prev:hover {
   background-color: rgba(107, 160, 240, 0.7);
@@ -1050,10 +864,6 @@ a {
 }
 
 /* ==================== СЕКЦИЯ 11: КЕЙСЫ КЛИЕНТОВ ==================== */
-/* Верхняя часть секции кейсов */
-.cases__top {
-  margin-bottom: 74px;
-}
 /* Заголовок кейсов */
 .cases__title {
   max-width: 905px;
@@ -1280,14 +1090,14 @@ a {
   display: flex;
   flex-direction: column;
   text-align: end;
-  margin-top: -15px;
+  margin-top: -5px;
+  gap: 12.5px;
 }
 /* Цифра на оси Y */
 .graf__number {
   color: rgba(198, 194, 254, 1);
   font-size: 24px;
   font-weight: 700;
-  line-height: 49px;
 }
 /* Колонка с столбцами графика */
 .graf__column-items {
@@ -1305,7 +1115,7 @@ a {
 }
 /* Линия столбца графика */
 .graf__item-line {
-  height: 470px;
+  height: 390px;
   width: 29px;
   background: rgba(231, 241, 255, 1);
   border-radius: 20px;
@@ -1371,7 +1181,6 @@ a {
   max-width: 850px;
   width: 100%;
   height: 470px;
-  object-fit: cover;
   border-radius: 15px;
   margin-top: 110px;
 }
@@ -1383,9 +1192,9 @@ a {
 /* ==================== СЕКЦИЯ 12: КЛЮЧЕВАЯ ИНФОРМАЦИЯ ==================== */
 /* Основной контент */
 .information__content {
-  margin-top: 74px;
   position: relative;
   min-height: 470px;
+  height: 100%;
 }
 /* Шаги с информацией */
 .information__steps {
@@ -1498,9 +1307,6 @@ a {
 }
 
 /* ==================== СЕКЦИЯ 13: ЧТО ТАКОЕ СЕО ==================== */
-.seo__title {
-  margin-bottom: 74px;
-}
 .seo__back {
   max-width: 1396px;
   width: 100%;
@@ -1508,10 +1314,6 @@ a {
 }
 
 /* ==================== СЕКЦИЯ 14: ВСЁ О СЕО-ПРОДВИЖЕНИИ ==================== */
-/* Контейнер с заголовком */
-.blog__top {
-  margin-bottom: 74px;
-}
 /* Основной контент секции */
 .blog__content {
   display: grid;
@@ -1548,10 +1350,6 @@ a {
 }
 
 /* ==================== СЕКЦИЯ 15: ПРОДВИЖЕНИЕ БЕЗ ДОПЛАТЫ ==================== */
-/* контейнер с заголовком */
-.free-promotion__top {
-  margin-bottom: 74px;
-}
 /* фотка в контейнере заголовка */
 .free-promotion__title-img {
   margin-right: 100px;
@@ -1644,7 +1442,7 @@ a {
   text-align: center;
 }
 /* Стили для 4-ого элемента */
-.free-promotion__item-img.four {
+.free-promotion-four {
   margin-top: 35px;
 }
 .free-promotion__item-description.four {
@@ -1673,9 +1471,6 @@ a {
 }
 
 /* ==================== СЕКЦИЯ 16: ХОТИТЕ СТАТЬ НАШИМ ПАРТНЁРОМ? ==================== */
-.partner__top {
-  margin-bottom: 74px;
-}
 .partner__content {
   display: flex;
   flex-direction: row;
@@ -1826,20 +1621,4 @@ a {
 }
 .search__btn:hover{
   transform: translateY(-5px); 
-}
-
-/* ==================== HEADER (ПОДВАЛ) ==================== */
-.footer{
-  padding: 60px 50px 80px 50px;
-  text-align: center;
-}
-.footer__title{
-  font-size: 40px;
-}
-.footer__nav{
-  margin-top: 20px;
-  font-size: 24px;
-}
-.footer__link{
-  text-decoration: underline;
 }

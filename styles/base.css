@@ -1,0 +1,643 @@
+/* ==================== ОБЩИЕ СТИЛИ И СБРОС ==================== */
+
+/* Сброс стилей для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+/* Убираем маркеры у списков */
+ul {
+  list-style: none;
+}
+/* Стили для кнопок */
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: inherit;
+}
+/* Стили для полей ввода */
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: inherit;
+}
+/* Стили для текстовых областей */
+textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: inherit;
+}
+/* Стили для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==================== БАЗОВЫЕ ШАБЛОНЫ ==================== */
+/* Основной контейнер для центрирования контента */
+.container {
+  max-width: 2032px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 318px;
+}
+/* Отступ между секциями */
+.section {
+  margin-bottom: 140px;
+}
+.section:last-child {
+  margin-bottom: 0;
+}
+/* Фон основной области */
+.main {
+  background: rgba(249, 249, 249, 1);
+}
+/* Заголовок секции */
+.section__title {
+  font-size: 64px;
+  font-weight: 800;
+  color: #80b3ff;
+}
+/* Декоративная часть заголовка (черный текст) */
+.section__title-decor {
+  color: rgb(0, 0, 0);
+}
+/* Стиль для ссылок "Смотреть все" */
+.look-all {
+  color: rgb(128, 179, 255);
+  font-size: 32px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+/* Шапка секции с заголовком и ссылкой */
+.section__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 74px;
+}
+
+/* ==================== HEADER (ШАПКА) ==================== */
+/* Основной блок шапки */
+.header {
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 1);
+  padding: 11px 0 22px 0;
+  /* position: sticky;
+  top: 0;
+  z-index: 10; */
+}
+/* Контейнер шапки с уменьшенными отступами */
+.header__container {
+  padding: 0 267px;
+}
+/* Блок с контактной информацией */
+.header__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Стили для номеров телефонов */
+.header__phones,
+.header__number {
+  color: rgba(128, 179, 255, 1);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 53px;
+}
+/* Заголовок "Бесплатно по РФ" */
+.header__title {
+  color: rgba(128, 179, 255, 1);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+/* Декоративная линия-разделитель */
+.header__border {
+  border: 2px solid rgba(198, 194, 254, 1);
+}
+/* Основная навигация */
+.nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Логотип */
+.header__logo {
+  transition: all 0.7s ease;
+}
+/* Эффект навидения */
+.header__logo:hover {
+  transform: translateY(5px);
+}
+/* Список пунктов меню */
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+/* Стиль для активного пункта меню (Главная) */
+.nav__link.active {
+  color: black;
+}
+/* Стиль для обычных пунктов меню */
+.nav__link {
+  color: rgba(198, 194, 254, 1);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 53px;
+  transition: all 0.5s ease;
+  display: inline-block;
+}
+.dropdown {
+  position: relative;
+}
+/* При наведении на страницу */
+.dropdown__toggle {
+  transition: all 0.5s ease;
+}
+.dropdown__toggle:hover .nav__link,
+.nav__link:hover {
+  color: black;
+}
+.dropdown__toggle-img {
+  padding: 0 0 0 10px;
+  transition: transform 0.7s ease;
+}
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: 70px;
+  left: -200px;
+  width: 604px;
+  flex-direction: column;
+  gap: 10px;
+}
+.dropdown__menu-link {
+  color: rgba(198, 194, 254, 1);
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  box-shadow: 0px 8px 12px 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+.dropdown__menu-link:hover {
+  background: #c6c2fe;
+  color: #000;
+}
+.open {
+  display: flex;
+}
+.img__click {
+  transform: rotate(180deg);
+  margin-left: 10px;
+}
+
+/* ==================== FOOTER (ПОДВАЛ) ==================== */
+.footer {
+  padding: 60px 50px 80px 50px;
+  text-align: center;
+}
+.footer__title {
+  font-size: 40px;
+}
+.footer__nav {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.footer__link {
+  text-decoration: underline;
+}
+
+/* ==================== АДАПТАЦИЯ ==================== */
+/* ==================== АДАПТАЦИЯ ПОД 1920px ==================== */
+@media (max-width: 1920px) {
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    max-width: 1920px;
+    padding: 0 280px;
+  }
+  .header__container {
+    padding: 0 240px;
+  }
+  .section__top{
+    margin-bottom: 65px;
+  }
+  .section__title {
+    font-size: 52px;
+    line-height: 72px;
+  }
+  .look-all {
+    font-size: 28px;
+  }
+  .look-all svg {
+    max-width: 50px;
+    width: 100%;
+  }
+  /* Уменьшаем отступы между секциями */
+  .section {
+    margin-bottom: 120px;
+  }
+
+  /* HEADER */
+  .nav__list {
+    gap: 40px;
+  }
+  .nav__link {
+    font-size: 20px;
+  }
+  .header__number {
+    font-size: 28px;
+  }
+  .header__number-decor {
+    font-size: 28px;
+  }
+  .header__title {
+    font-size: 20px;
+  }
+  .header__logo {
+    max-width: 180px;
+    width: 100%;
+  }
+  .dropdown__menu {
+    top: 60px;
+    width: 490px;
+  }
+  .dropdown__menu-link {
+    font-size: 20px;
+    padding: 12px 17px;
+  }
+
+  /* ФУТЕР */
+  .footer {
+    padding: 50px 40px 70px 40px;
+  }
+  .footer__title {
+    font-size: 36px;
+  }
+  .footer__nav {
+    font-size: 22px;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 1600px ==================== */
+@media(max-width: 1600px){
+  /* Шаблоны */
+  .container{
+    max-width: 1600px;
+    padding: 0 240px;
+  }
+  .section__top{
+    margin-bottom: 60px;
+  }
+  .section__title{
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .look-all {
+    font-size: 24px;
+  }
+  .look-all svg {
+    max-width: 45px;
+  }
+  /* Шапка */
+  .header__container {
+    padding: 0 180px;
+  }
+  .nav{
+    margin-top: 15px;
+  }
+  .header__number {
+    font-size: 25px;
+  }
+  .header__number-decor {
+    font-size: 25px;
+  }
+  .nav__list {
+    gap: 35px;
+  }
+  .nav__link {
+    font-size: 18px;
+  }
+  .header__logo {
+    max-width: 160px;
+  }
+  .dropdown__menu {
+    width: 450px;
+    left: -180px;
+  }
+  .dropdown__menu-link {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+}
+/* ==================== АДАПТАЦИЯ ПОД 1490px ==================== */
+@media (max-width: 1490px) {
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    padding: 0 200px;
+    max-width: 1490px;
+  }
+  .header__container {
+    padding: 0 140px;
+  }
+  .section {
+    margin-bottom: 80px;
+  }
+  .section__title {
+    font-size: 48px;
+  }
+  .look-all {
+    font-size: 28px;
+  }
+
+  /* HEADER */
+  .header{
+    padding: 10px 0;
+  }
+  .header__border{
+    border: 1px solid rgba(198, 194, 254, 1);
+  }
+  .nav__list {
+    gap: 30px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 18px;
+  }
+  .header__number {
+    font-size: 23px;
+  }
+  .header__number-decor {
+    font-size: 23px;
+  }
+  .dropdown__toggle-img{
+    width: 32px;
+  }
+
+  /*  FOOTER - АДАПТАЦИЯ  */
+  .footer {
+    padding: 40px 30px 50px 30px;
+  }
+  .footer__title {
+    font-size: 32px;
+  }
+  .footer__nav {
+    font-size: 20px;
+  }
+  .footer__link {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 1300px ==================== */
+@media(max-width: 1300px){
+  /* Общие для нескольких секций */
+  .section__title {
+    font-size: 44px;
+  }
+  .look-all {
+    font-size: 22px;
+  }
+  .nav__list{
+    gap: 20px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 16px;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 1024px ==================== */
+@media (max-width: 1024px) {
+  /* ОБЩИЕ НАСТРОЙКИ */
+  .container {
+    padding: 0 80px;
+  }
+  .section {
+    margin-bottom: 80px;
+  }
+  .section__title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .look-all {
+    font-size: 20px;
+  }
+  .section__top {
+    margin-bottom: 50px;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 768px (ПЛАНШЕТЫ) ==================== */
+@media (max-width: 768px){
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    padding: 0 40px;
+  }
+  .header__container {
+    padding: 0 40px;
+  }
+  .section {
+    margin-bottom: 60px;
+  }
+  .section__title {
+    font-size: 36px;
+  }
+  .look-all {
+    font-size: 18px;
+  }
+
+  /* HEADER */
+  .header__text {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header__number {
+    font-size: 18px;
+  }
+  .header__title {
+    font-size: 16px;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav__list {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 14px;
+  }
+
+  /* FOOTER - АДАПТАЦИЯ  */
+  .footer {
+    padding: 30px 20px 40px 20px;
+  }
+  .footer__title {
+    font-size: 24px;
+  }
+  .footer__nav {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .footer__link {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .footer__link-text {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 490px (МАЛЕНЬКИЕ СМАРТФОНЫ) ==================== */
+@media (max-width: 490px){
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    padding: 0 20px;
+  }
+  .header__container {
+    padding: 0 20px;
+  }
+  .header {
+    padding: 8px 0 15px 0;
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+  .section__title {
+    font-size: 24px;
+  }
+  .section__top {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .look-all {
+    font-size: 14px;
+  }
+
+  /* HEADER */
+  .header__text {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .header__number {
+    font-size: 14px;
+  }
+  .header__title {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .nav {
+    margin-top: 12px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav__list {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 12px;
+    line-height: 35px;
+  }
+
+    /* FOOTER - АДАПТАЦИЯ  */
+  .footer {
+    padding: 20px 15px 30px 15px;
+  }
+  .footer__title {
+    font-size: 20px;
+  }
+  .footer__nav {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .footer__link {
+    display: block;
+    margin: 3px 0;
+  }
+}
+
+/* ==================== АДАПТАЦИЯ ПОД 390px (САМЫЕ МАЛЕНЬКИЕ ЭКРАНЫ) ==================== */
+
+@media (max-width: 390px){
+  /* ОБЩИЕ СТИЛИ */
+  .container {
+    padding: 0 15px;
+  }
+  .header__container {
+    padding: 0 15px;
+  }
+  .header {
+    padding: 6px 0 12px 0;
+  }
+  .section {
+    margin-bottom: 30px;
+  }
+  .section__title {
+    font-size: 20px;
+  }
+  .section__top {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .look-all {
+    font-size: 12px;
+  }
+
+  /* HEADER */
+  .header__text {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .header__number {
+    font-size: 12px;
+  }
+  .header__title {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .header__border {
+    border: 1px solid rgba(198, 194, 254, 1);
+  }
+  .nav {
+    margin-top: 8px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .nav__list {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .nav__link-title,
+  .nav__link {
+    font-size: 11px;
+    line-height: 28px;
+  }
+
+  /* ==================== FOOTER - АДАПТАЦИЯ ==================== */
+  .footer__title {
+    font-size: 18px;
+  }
+  .footer__nav {
+    font-size: 13px;
+  }
+}
+
