@@ -3,70 +3,14 @@
 @media (max-width: 1920px) {
   /* СЕКЦИЯ 1: HERO */
   .hero__container {
-    padding: 130px 280px 0 280px;
+    padding: 100px 130px 0 130px;
   }
   .hero__title {
-    font-size: 80px;
+    font-size: 65px;
     line-height: 98px;
-    max-width: 700px;
   }
-  .hero__btn {
-    font-size: 32px;
-    padding: 20px 40px;
-    max-width: 480px;
-  }
-  .hero__desc {
-    font-size: 28px;
-    line-height: 38px;
-  }
-  .hero__text {
-    margin-top: 220px;
-  }
-  .hero__logo-img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-  }
-  /* Размеры фигур */
-  .shape__img-1 {
-    max-width: 180px;
-    width: 100%;
-  }
-  .shape__img-2 {
-    max-width: 147px;
-    width: 100%;
-  }
-  .shape__img-3 {
-    max-width: 150px;
-    width: 100%;
-  }
-  .shape__img-4 {
-    max-width: 105px;
-    width: 100%;
-  }
-  .shape__img-5 {
-    max-width: 110px;
-    width: 100%;
-  }
-  .shape__img-6 {
-    max-width: 300px;
-    width: 100%;
-  }
-  .shape__img-7 {
-    max-width: 68px;
-    width: 100%;
-  }
-  .shape__img-8 {
-    max-width: 147px;
-    width: 100%;
-  }
-  .shape__img-9 {
-    max-width: 170px;
-    width: 100%;
-  }
-  .shape__img-10 {
-    max-width: 315px;
-    width: 100%;
+  .shape__img-10{
+    max-width: 270px;
   }
   /* Анимация декораций */
   @keyframes hero-animation {
@@ -599,9 +543,6 @@
 /* ==================== АДАПТАЦИЯ ПОД 1600px ==================== */
 @media (max-width: 1600px) {
   /* 1 СЕКЦИЯ */
-  .hero__container {
-    padding: 110px 220px 0 220px;
-  }
   .hero__text {
     margin-top: 180px;
   }
@@ -609,46 +550,14 @@
     max-width: 450px;
   }
   .hero__title {
-    font-size: 75px;
     line-height: 90px;
   }
-  /* Размеры фигур */
-  .shape__img-1 {
-    max-width: 165px;
-  }
-  .shape__img-2 {
-    max-width: 130px;
-  }
-  .shape__img-3 {
-    max-width: 135px;
-  }
-  .shape__img-4 {
-    max-width: 95px;
-  }
-  .shape__img-5 {
-    max-width: 100px;
-  }
-  .shape6 {
-    top: 16%;
-  }
-  .shape__img-6 {
-    max-width: 250px;
-  }
-  .shape__img-7 {
-    max-width: 58px;
-  }
-  .shape__img-8 {
-    max-width: 135px;
-  }
-  .shape__img-9 {
-    max-width: 150px;
-  }
   .shape10 {
-    bottom: 0;
-    right: 19%;
+    bottom: -15px;
+    right: 13%;
   }
   .shape__img-10 {
-    max-width: 285px;
+    max-width: 250px;
   }
   @keyframes raketa-animation {
     50% {
@@ -657,17 +566,17 @@
   }
   .hero__button-row {
     margin-top: 65px;
-    gap: 35px;
+    gap: 50px;
   }
   .hero__btn {
     font-size: 28px;
     line-height: 45px;
     padding: 15px 35px;
-    max-width: 430px;
+    max-width: 550px;
   }
   .hero__desc {
-    font-size: 26px;
-    line-height: 35px;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   /* 2 СЕКЦИЯ */
@@ -711,7 +620,6 @@
     gap: 15px;
   }
   .prices__item {
-    width: 240px;
     padding: 25px 18px 20px 18px;
   }
   .prices__item-desc {
@@ -727,7 +635,10 @@
   /* 5 СЕКЦИЯ */
   .stoks__content-text {
     font-size: 26px;
-    line-height: 36px;
+    max-width: 500px;
+  }
+  .stoks__list-item{
+    margin-bottom: 20px;
   }
   .stoks__form {
     padding: 25px 55px 40px 55px;
@@ -742,9 +653,6 @@
   /* 7 СЕКЦИЯ */
   .complex__box {
     gap: 18px;
-  }
-  .complex__item {
-    max-width: 420px;
   }
   .complex__item-title {
     font-size: 21px;
@@ -818,6 +726,7 @@
   .cases__item-box{
     gap: 25px;
   }
+  .cases
   .cases__toggle{
     gap: 25px;
   }
@@ -884,26 +793,28 @@
   .search__btn {
     font-size: 26px;
   }
+  .search__right{
+    max-width: 700px;
+  }
 }
 
 /* ==================== АДАПТАЦИЯ ПОД 1490px ==================== */
 @media (max-width: 1490px) {
   /* СЕКЦИЯ 1: HERO */
   .hero__container {
-    padding: 80px 180px 0 180px;
+    padding: 90px 180px 0 180px;
   }
   .hero__logo-img {
-    max-width: 350px;
+    max-width: 400px;
   }
   .hero__shapes{
     max-height: 500px;
   }
   .shape__img-1{
-    max-width: 100px;
+    max-width: 120px;
   }
   .shape2{
-    top: 30%;
-    left: 16%;
+    top: 35%;
   }
   .shape__img-2{
     max-width: 80px;
@@ -913,13 +824,13 @@
     left: 25%;
   }
   .shape__img-3{
-    max-width: 95px;
+    max-width: 110px;
   }
   .shape4{
-    top: 38%;
+    top: 42%;
   }
   .shape__img-4{
-    max-width: 75px;
+    max-width: 65px;
   }
   .shape5{
     top: 10%;
@@ -997,11 +908,14 @@
     height: 500px;
   }
   .sites__item-title {
-    font-size: 32px;
+    font-size: 31px;
+    line-height: 55px;
+  }
+  .sites__item-img{
+    max-width: 870px;
   }
   .sites__btn {
-    font-size: 22px;
-    padding: 18px 40px;
+    font-size: 20px;
   }
 
   /* СЕКЦИЯ 4: ЦЕНЫ */
@@ -1010,18 +924,41 @@
   }
   .prices__item {
     width: 220px;
-    padding: 25px 20px 20px 20px;
+    padding: 25px 15px 20px 15px;
   }
   .prices__item-title {
-    font-size: 30px;
+    font-size: 20px;
+  }
+  .prices__item-price{
+    font-size: 18px;
+  }
+  .prices__item-desc{
+    margin: 15px 0;
   }
   .prices__item-text {
     font-size: 16px;
   }
+  .prices__btn{
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
 
   /* СЕКЦИЯ 5: АКЦИИ */
+  .stoks__content-text{
+    max-width: 400px;
+  }
+  .stoks__content-desc{
+    font-size: 24px;
+  }
+  .stoks__list{
+    margin-top: 25px;
+  }
+  .stoks__list-item{
+    font-size: 22px;
+  }
   .stoks__form {
     padding: 25px 50px 40px 50px;
+    max-width: 500px;
   }
   .stoks__form-title {
     font-size: 28px;
@@ -1037,7 +974,8 @@
     font-size: 18px;
   }
   .stoks__btn {
-    font-size: 28px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   /* СЕКЦИЯ 7: КОМПЛЕКС */
@@ -1054,20 +992,28 @@
   }
 
   /* СЕКЦИЯ 8: БИЗНЕС */
-  .business__items {
-    gap: 18px;
-  }
+  
   .business__item {
     padding: 24px 26px;
   }
   .business__item-title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .business__item-description {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 25px;
   }
 
   /* СЕКЦИЯ 9: ГАРАНТИИ */
+  .warranty__title{
+    margin-bottom: 50px;
+  }
+  .warranty__top-text{
+    max-width: 500px;
+  }
+  .warranty__icon{
+    max-width: 350px;
+  }
   .warranty__input {
     font-size: 32px;
     padding: 18px 35px 12px 35px;
@@ -1077,20 +1023,23 @@
     font-size: 32px;
   }
   .warranty__btn {
-    font-size: 28px;
+    font-size: 24px;
     height: 80px;
     padding: 14px 18px;
   }
   .warranty__description {
-    font-size: 28px;
+    font-size: 22px;
   }
   .warranty__text {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   /* СЕКЦИЯ 10: КАЛЬКУЛЯТОР */
+  .calculator__top-icon{
+    max-width: 110px;
+  }
   .calculator__content {
-    min-height: 700px; /* Увеличиваем минимальную высоту */
+    min-height: 500px; /* Увеличиваем минимальную высоту */
   }
   .calculator__items {
     position: relative; /* Меняем absolute на relative */
@@ -1098,53 +1047,67 @@
   }
   .calculator__number {
     width: 220px;
-    font-size: 28px;
+    font-size: 22px;
+    padding: 10px 20px;
   }
   .calculator__item-title {
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   .calculator__item-description {
-    font-size: 22px;
+    font-size: 20px;
   }
   .calculator__city-title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .calculator__row-button {
-    font-size: 28px;
+    font-size: 20px;
+    padding: 10px 20px;
+    line-height: 30px;
   }
 
   /* СЕКЦИЯ 11: КЕЙСЫ */
+  .cases__content{
+    min-height: 700px;
+  }
   .cases__content-item {
     max-width: 420px;
     font-size: 22px;
   }
+  .cases__item-left{
+    max-width: 300px;
+  }
   .cases__item-title,
   .cases__item-link {
-    font-size: 22px;
-  }
-  .cases__item-text {
-    max-width: 400px;
+    font-size: 20px;
   }
   .cases__text-before,
   .cases__text-after,
   .cases__toggle-title {
-    font-size: 22px;
+    font-size: 18px;
   }
   .cases__p-before,
   .cases__p-after {
-    font-size: 22px;
+    font-size: 18px;
   }
   .graf__title {
     font-size: 22px;
   }
   .graf__number {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .graf__item-line{
+    width: 22px;
   }
   .graf__item-month.before,
   .graf__item-month.after {
-    font-size: 20px;
+    font-size: 18px;
   }
+
   /* СЕКЦИЯ 12: КЛЮЧЕВАЯ ИНФОРМАЦИЯ */
+  .information{
+    margin-bottom: 180px;
+  }
   .information__why {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -1152,6 +1115,7 @@
   .information__because {
     max-width: 100%;
     padding: 14px 12px;
+    gap: 50px;
   }
   .information__because-description {
     font-size: 18px;
@@ -1191,14 +1155,33 @@
     gap: 20px;
   }
   .free-promotion__item {
-    height: 350px;
+    height: 320px;
     padding: 25px;
+    justify-content: space-around;
+  }
+  .free-promotion__item-img{
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .free-promotion-two{
+    max-width: 190px;
+  }
+  .free-promotion-four{
+    margin-top: 0;
+    max-width: 190px;
+  }
+  .free-promotion-five{
+    max-width: 200px;
+    max-height: 150px;
+  }
+  .free-promotion-five{
+    margin: 0;
   }
   .free-promotion__step{
     display: none;
   }
   .free-promotion__item-description {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 30px;
   }
   .free-promotion__step.right {
@@ -1211,11 +1194,7 @@
     padding: 20px 30px 30px 30px;
   }
   .free-promotion__promotion-title {
-    font-size: 28px;
-  }
-  .free-promotion__form {
-    flex-direction: column;
-    gap: 20px;
+    font-size: 24px;
   }
   .free-promotion__input {
     font-size: 32px;
@@ -1226,27 +1205,22 @@
     font-size: 32px;
   }
   .free-promotion__btn {
-    font-size: 32px;
+    font-size: 24px;
     height: 80px;
   }
 
   /* СЕКЦИЯ 16: ХОТИТЕ СТАТЬ НАШИМ ПАРТНЁРОМ? */
-  .partner__content {
-    flex-direction: column;
-    gap: 40px;
-  }
   .partner__content-img {
-    width: 300px;
-    height: auto;
-    margin: 0 auto;
+    max-width: 300px;
   }
   .partner__list {
-    max-width: 100%;
+    max-width: 600px;
+    padding-left: 40px;
   }
   .partner__list-item {
-    font-size: 24px;
-    line-height: 40px;
-    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 35px;
+    margin-bottom: 25px;
   }
   .partner__form {
     padding: 20px 80px 30px 80px;
@@ -1277,8 +1251,8 @@
     margin-bottom: 30px;
   }
   .partner__btn {
-    font-size: 28px;
-    padding: 16px 25px;
+    font-size: 24px;
+    padding: 12px 20px;
   }
 
   /*  СЕКЦИЯ 17: КАК НАС НАЙТИ?  */
@@ -1286,34 +1260,28 @@
     padding-top: 60px;
   }
   .search__title {
-    font-size: 56px;
+    font-size: 44px;
   }
   .search__span {
-    font-size: 140px;
-  }
-  .search__content {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .search__left {
-    width: 100%;
+    font-size: 110px;
   }
   .search__text {
-    font-size: 28px;
+    font-size: 22px;
+    max-width: 400px;
+    width: 100%;
   }
   .search__text-description {
     margin-bottom: 30px;
   }
   .search__right {
-    max-width: 100%;
+    max-width: 500px;
   }
   .search__map {
-    height: 500px;
+    height: 510px;
   }
   .search__btn {
-    font-size: 28px;
-    padding: 16px 25px;
-    max-width: 100%;
+    font-size: 22px;
+    padding: 12px 20px;
   }
 
   /* ИЗОБРАЖЕНИЯ */
